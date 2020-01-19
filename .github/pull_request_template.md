@@ -9,4 +9,4 @@
 - [ ] Le code est en anglais
 - [ ] Les constantes sont en MACRO_CASE
 - [ ] Les variables et fonctions sont en lowerCamelCase
-- [ ] Le code a été testé avant d'être soumis
+- [ ] Le code a été testé avant d'être soumis.
