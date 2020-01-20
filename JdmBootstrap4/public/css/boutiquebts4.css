@@ -40,41 +40,52 @@ f8f400(jaune)
 #slider:hover #suivant {
   opacity: 1;
 }
+
 /*---------------------------------------*/
 
 /*----mega menu hover-------r*/
 
-.Professionels{
-  border-top: 5px solid red ;
+.Professionels {
+  border-top: 5px solid red;
 }
-.besoins_specifique{
+
+.besoins_specifique {
   border-top: 5px solid green;
 }
-.espaces_multisensoriels{
+
+.espaces_multisensoriels {
   border-top: 5px solid purple;
 }
-.sensorialite{
+
+.sensorialite {
   border-top: 5px solid rgb(12, 190, 245);
 }
-.motricite{
+
+.motricite {
   border-top: 5px solid rgb(115, 243, 211);
 }
-.language{
+
+.language {
   border-top: 5px solid rgb(243, 168, 5);
 }
-.apprentissage{
+
+.apprentissage {
   border-top: 5px solid rgb(248, 100, 248);
 }
-.competence_sociales{
+
+.competence_sociales {
   border-top: 5px solid rgb(243, 100, 4);
 }
-.creativite{
+
+.creativite {
   border-top: 5px solid rgb(93, 252, 79);
 }
-.autonomie{
+
+.autonomie {
   border-top: 5px solid rgb(1, 196, 255);
 }
-.inclusion{
+
+.inclusion {
   border-top: 5px solid rgb(122, 26, 2);
 }
 
@@ -101,7 +112,7 @@ f8f400(jaune)
   font-family: 'Dosis', sans-serif;
   font-weight: 800;
   display: block !important;
- 
+
 }
 
 .mainmenu .active a,
@@ -112,7 +123,7 @@ f8f400(jaune)
 .navbar-default .navbar-nav>.show>a,
 .navbar-default .navbar-nav>.show>a:focus,
 .navbar-default .navbar-nav>.show>a:hover {
-  color: #00a8ec; 
+  color: #00a8ec;
   outline: 0;
 }
 
@@ -124,12 +135,14 @@ f8f400(jaune)
   padding: 0;
   min-height: 20px;
 }
+
 /*----------------------------------*/
-.list-inline a{
+.list-inline a {
   text-decoration: none;
   color: black;
 }
-.list-inline a:hover{
+
+.list-inline a:hover {
   color: #00a8ec;
   text-decoration-color: #00a8ec;
   -moz-text-decoration-color: #00a8ec;
@@ -157,29 +170,35 @@ f8f400(jaune)
   -webkit-transition: 0.3s all ease;
   transition: 0.3s all ease;
 }
+
 /*----------bloc1--------------*/
-.bloc1{
-padding: 15px;
+.bloc1 {
+  padding: 15px;
 }
-.bloc1 p{
+
+.bloc1 p {
   font-size: 14px;
 }
-.bloc1 h3{
-text-align: center;
-  padding-bottom: 50px;
+
+.bloc1 h3 {
+  text-align: center;
+  padding-top: 20px;
   font-size: 30px;
   font-family: 'Dancing Script', cursive;
 }
-.bloc1 .bouton{
-font-size: 14px;
+
+.bloc1 .bouton {
+  font-size: 14px;
 }
-.equilibre{
+
+.equilibre {
   box-shadow: 3px 3px 3px 3px skyblue;
 }
 
-.empathie{
+.empathie {
   box-shadow: 3px 3px 3px 3px skyblue;
 }
+
 /*---------carte produis-------*/
 .card-product .img-wrap {
   border-radius: 3px 3px 0 0;
@@ -188,22 +207,26 @@ font-size: 14px;
   height: 220px;
   text-align: center;
 }
+
 .card-product .img-wrap img {
   max-height: 100%;
   max-width: 100%;
   object-fit: cover;
 }
+
 .card-product .info-wrap {
   overflow: hidden;
   padding: 15px;
   border-top: 1px solid #eee;
 }
+
 .card-product .bottom-wrap {
   padding: 15px;
   border-top: 1px solid #eee;
 }
 
-.label-rating { margin-right:10px;
+.label-rating {
+  margin-right: 10px;
   color: #333;
   display: inline-block;
   vertical-align: middle;
@@ -261,7 +284,7 @@ font-size: 14px;
     display: none;
     z-index: 1
   } */
-  
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -272,12 +295,13 @@ font-size: 14px;
   .navbar-nav .show .dropdown-menu .dropdown-menu .dropdown-menu>li>a {
     padding: 16px 15px 16px 45px
   }
-  .navbar-collapse{
+
+  .navbar-collapse {
     z-index: 2;
     position: absolute;
     background-color: rgb(247, 12, 12);
     margin-top: 380px;
     width: 100%;
   }
-  
+
 }
