@@ -42,7 +42,7 @@ f8f400(jaune)
 }
 /*---------------------------------------*/
 
-/*----mega menu hove-------r*/
+/*----mega menu hover-------r*/
 
 .Professionels{
   border-top: 5px solid red ;
@@ -129,6 +129,12 @@ f8f400(jaune)
   text-decoration: none;
   color: black;
 }
+.list-inline a:hover{
+  color: #00a8ec;
+  text-decoration-color: #00a8ec;
+  -moz-text-decoration-color: #00a8ec;
+}
+
 .bouton {
   display: inline-block;
   text-align: center;
@@ -150,6 +156,29 @@ f8f400(jaune)
   -o-transition: 0.3s all ease;
   -webkit-transition: 0.3s all ease;
   transition: 0.3s all ease;
+}
+/*----------bloc1--------------*/
+.bloc1{
+padding: 15px;
+}
+.bloc1 p{
+  font-size: 14px;
+}
+.bloc1 h3{
+text-align: center;
+  padding-bottom: 50px;
+  font-size: 30px;
+  font-family: 'Dancing Script', cursive;
+}
+.bloc1 .bouton{
+font-size: 14px;
+}
+.equilibre{
+  box-shadow: 3px 3px 3px 3px skyblue;
+}
+
+.empathie{
+  box-shadow: 3px 3px 3px 3px skyblue;
 }
 /*---------carte produis-------*/
 .card-product .img-wrap {
@@ -183,7 +212,8 @@ f8f400(jaune)
 .card-product .price-old {
   color: #999;
 }
-/*media mega menu*/
+
+/*-----------------media---- mega menu--------------------*/
 @media only screen and (min-width: 767px) {
   .mainmenu .collapse ul li:hover>ul {
     display: block

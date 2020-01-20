@@ -7,36 +7,48 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
- <!-- Bootstrap CSS -->
- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="public/bts-4/css/bootstrap.min.css">
+    <!--local-->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
     <!-- Load an icon library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylsheet" href="public/css/font-awesome.min.css">
+    <!--local-->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <!--ma feuille de style-->
     <link rel="stylesheet" href="public/css/stylebts4.css">
 
 </head>
 
 <body class="container-fluid m-0 p-0">
-    
+
     <header>
         <!----------------------------barre de cookie----------------------------------->
-    <section id="cookies">
-        <p>
-            "Nous utilisons les cookies afin de fournir les services et fonctionnalités proposés sur notre site et afin
-            d’améliorer l’expérience de nos utilisateurs.
-            <b>Les cookies sont des données qui sont téléchargés ou stockés sur votre ordinateur ou sur tout autre
-                appareil.</b>
-        </p>
-        <!--onclik sa veut dire va cliker sur le bouton et la fonction c'est masquer les cookies-->
-        <button id="ok">
-            ok
-        </button>
-        <button id="refuser">
-            refuser
-        </button>
-    </section>
-    <!--petit bouton pour remonter en haut de la page-->
-    <button onclick="topFunction()" id="monBtn" title="allez en haut"><i class="fa fa-angle-double-up"></i></button>
+        <section id="cookies">
+            <figure class=" row d-flex justify-content-around mt-2">
+                <img src="public/img/biscuit-cookies.jpg" alt="img de cookies" class="img-fluid">
+                <figcaption class=" col-offset-6 col-6">"Ici on utilise les cookies afin de fournir les services et fonctionnalités
+                    proposés sur notre site et afin
+                    d’améliorer l’expérience de nos utilisateurs.
+                    <b>Les cookies sont des données qui sont téléchargés ou stockés sur votre ordinateur ou sur tout
+                        autre
+                        appareil.</b>
+                </figcaption>
+            </figure>
+            <div class="btn-group d-flex justify-content-around mb-1" role="group" aria-label="Button group">
+                 <!--onclik sa veut dire va cliker sur le bouton et la fonction c'est masquer les cookies-->
+                 <button id="ok" class="btn-outline-primary mb-1 mr-1">
+                    oui, en plus c'est bon les cookies
+                </button>
+                <button id="refuser" class="btn-outline-primary mb-1 ml-1">
+                    Non merci!
+                </button>
+            </div>
+               
+            </div>
+        </section>
+        <!--petit bouton pour remonter en haut de la page-->
+        <button onclick="topFunction()" id="monBtn" title="allez en haut"><i class="fa fa-angle-double-up"></i></button>
         <!--navbar-expand-sm=permet de l'aficher quand il diminue-->
         <nav class="navbar navbar-expand-lg bg-dark">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -124,26 +136,34 @@
                                                         <!---------------nom/prenom---------------->
 
                                                         <p class="col-6">
-                                                            <input type="text" id="nom" placeholder="Nom" class="form-control" required>
+                                                            <input type="text" id="nom" placeholder="Nom"
+                                                                class="form-control" required>
                                                         </p>
                                                         <p class="col-6">
-                                                            <input type="text" id="prenom" placeholder="Prenom" class="form-control" required>
+                                                            <input type="text" id="prenom" placeholder="Prenom"
+                                                                class="form-control" required>
                                                         </p>
                                                         <!------------date de naissance-------------->
                                                         <p class="col-12">
                                                             <label for="date">Date de Naissance</label>
-                                                            <input type="date" id="date" placeholder="votre date de naissance" required>
+                                                            <input type="date" id="date"
+                                                                placeholder="votre date de naissance" required>
                                                         </p>
                                                         <p class="col-12">
-                                                            <input type="email" id="email" class="form-control" placeholder="votre e-mail" required>
+                                                            <input type="email" id="email" class="form-control"
+                                                                placeholder="votre e-mail" required>
                                                         </p>
                                                         <p class="col-6">
-                                                            <input type="password" id="password" class="form-control" placeholder="password" required>
+                                                            <input type="password" id="password" class="form-control"
+                                                                placeholder="password" required>
                                                         </p>
                                                         <p class="col-6">
-                                                            <input type="password" id="confirmPassword" class="form-control" placeholder="confirm password" required>
+                                                            <input type="password" id="confirmPassword"
+                                                                class="form-control" placeholder="confirm password"
+                                                                required>
                                                         </p>
-                                                        <button type="submit" class="btn btn-outline-success btn-block">M'inscrire</button>
+                                                        <button type="submit"
+                                                            class="btn btn-outline-success btn-block">M'inscrire</button>
                                                     </fieldset>
                                                 </section>
                                                 <section class="col-12 col-md-6 col-lg-6">
@@ -158,7 +178,9 @@
                                                             <label for="mdp">Votre mot de Passe</label>
                                                             <input type="password" id="mdp" placeholder="password">
                                                         </p>
-                                                        <button type="submit" class="btn btn-outline-success btn-block" >Me connectez</button>
+                                                        <button type="submit"
+                                                            class="btn btn-outline-success btn-block">Me
+                                                            connectez</button>
                                                     </fieldset>
                                                 </section>
                                             </div>
@@ -202,25 +224,25 @@
             <!-- The slideshow -->
             <div class="carousel-inner ">
                 <div class="carousel-item active">
-                    <img src="public/img/blog.jpg" alt="blog">
+                    <img src="public/img/slider-accueil/blog.jpg" alt="blog">
                     <div class="carousel-caption">
                         <a href="#" class="btn btn-info" role="button" target="_blank">Blog</a>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="public/img/boutique.jpg" alt="boutique" class="img-fluid">
+                    <img src="public/img/slider-accueil/boutique.jpg" alt="boutique" class="img-fluid">
                     <div class="carousel-caption">
                         <a href="#" class="btn btn-info" role="button" target="_blank">Boutique</a>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="public/img/espace_enfant.jpg" alt="Enfants" class="img-fluid">
+                    <img src="public/img/slider-accueil/espace_enfant.jpg" alt="Enfants" class="img-fluid">
                     <div class="carousel-caption">
                         <a href="#" class="btn btn-info" role="button" target="_blank">Espace Enfants</a>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="public/img/parent.jpg" alt="parents" class="img-fluid">
+                    <img src="public/img/slider-accueil/parent.jpg" alt="parents" class="img-fluid">
                     <div class="carousel-caption">
                         <a href="#" class="btn btn-info" role="button" target="_blank">Espace Parents</a>
                     </div>
@@ -244,7 +266,7 @@
             <article class="col-xs-6 col-md-4 col-lg-4">
                 <div class="our-team-main">
                     <figure class="team-front">
-                        <img src="public/img/espace_enfant.jpg" alt="espace Enfants" class="img-fluid">
+                        <img src="public/img/slider-accueil/espace_enfant.jpg" alt="espace Enfants" class="img-fluid">
                         <h3>Espace Enfants</h3>
                         <p>jeux, activiter diy, apprentissage</p>
                     </figure>
@@ -260,7 +282,7 @@
             <article class="col-xs-6 col-md-4 col-lg-4">
                 <div class="our-team-main">
                     <figure class="team-front">
-                        <img src="public/img/parent.jpg" alt="espace Enfants" class="img-fluid">
+                        <img src="public/img/slider-accueil/parent.jpg" alt="espace_parent" class="img-fluid">
                         <h3>Espace Parents</h3>
                         <p>Ressource, article, echange, idees</p>
                     </figure>
@@ -276,9 +298,10 @@
             <article class="col-xs-6 col-md-4 col-lg-4">
                 <div class="our-team-main">
                     <figure class="team-front">
-                        <img src="public/img/blog.jpg" alt="espace Enfants" class="img-fluid">
+                        <img src="public/img/slider-accueil/blog.jpg" alt="blog" class="img-fluid">
                         <h3>Blog</h3>
-                        <p>jeux, activiter Do you it Yourself, apprentissage <div class=""></div></p>
+                        <p>jeux, activiter Do you it Yourself, apprentissage <div class=""></div>
+                        </p>
                     </figure>
                     <div class="team-back">
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
@@ -307,10 +330,12 @@
                             <p> Comprend une colonne à bulles et son podium,
                                 un pouf géant, un projecteur océan, un cube lumineux et ses accessoires.
                             </p>
-                            <span class="price"> 40 eur</span>
+                            <div class="btn-group m-2" role="group" aria-label="Button group">
+                                <span class="price"> 40 eur</span>
                             <button type="button" class="btn btn-info btn-sm ml-5">Voir plus...
                                 <a href="boutique.html"></a>
                             </button>
+                            </div>                                
                         </div>
                     </div>
                 </article>
@@ -329,10 +354,13 @@
                                 calme, demi-lune manimo.
                                 Dès 4 ans.
                             </p>
-                            <span class="price"> 40 eur</span>
+                            <div class="btn-group m-2" role="group" aria-label="Button group">
+                                 <span class="price"> 40 eur</span>
                             <button type="button" class="btn btn-info btn-sm ml-5">Voir plus...
                                 <a href="boutique.html"></a>
                             </button>
+                            </div>
+                           
                         </div>
                     </div>
                 </article>
@@ -348,10 +376,12 @@
                             <p> Ce kit contient : sac en toile, éventail des émotions, 10
                                 tampons émotions, cartons des sensations physiques.
                             </p>
-                            <span class="price"> 40 eur</span>
+                           <div class="btn-group m-2" role="group" aria-label="Button group">
+                                 <span class="price"> 40 eur</span>
                             <button type="button" class="btn btn-info btn-sm ml-5">Voir plus...
                                 <a href="boutique.html"></a>
                             </button>
+                            </div>                           
                         </div>
                     </div>
                 </article>
@@ -466,14 +496,20 @@
             </section>
         </main>
     </footer>
-      <!-- mes feuilles JS---->
-      <script src="public/JS/boutontopbts4.js"></script>
-      <script type="text/javascript" src="public/js/cookiesbts4.js"></script>
- 
+    <!-- mes feuilles JS---->
+    <script src="public/JS/boutontopbts4.js"></script>
+    <script type="text/javascript" src="public/js/cookiesbts4.js"></script>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="public/JS/bootstrap.min.js"></script>
+    <!--local-->
+    <script src="public/JS/jquery-3.4.1.min.js"></script>
+    <!--local-->
+    <script src="public/JS/popper.min.js"></script>
+    <!--local-->
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
 </body>
 
 </html>
