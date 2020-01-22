@@ -3,7 +3,7 @@
 *{
     margin: 0;
     padding: 0;
-    max-width: auto;
+ 
 }
 /*reglage cookies*/
 #cookies {
@@ -76,7 +76,9 @@ a:hover {
 .active {
     color: rgb(51, 159, 248);
 }
-
+.fa-navicon:before{
+    color: #00a8ec;
+}
 /*----------------------boite modal----------------------------------------*/
 #myModal{
     font-size: 15px;
@@ -95,7 +97,7 @@ a:hover {
 /*-------------------slider---------------------------*/
 .carousel-inner img {
     width: 100%;
-    height: 400px;
+    
 }
 
 /*------------------main-------------------------------------*/

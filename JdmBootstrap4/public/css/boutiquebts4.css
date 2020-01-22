@@ -11,7 +11,7 @@ f8f400(jaune)
 
 #slider img {
   width: 100%;
-  height: auto;
+  height: 400px;
 }
 
 /*------------------fleche slider---------------------*/
@@ -41,7 +41,7 @@ f8f400(jaune)
   opacity: 1;
 }
 
-/*---------------------------------------*/
+/*-----------------------------------------------------------*/
 
 /*----mega menu hover-------r*/
 
@@ -99,10 +99,16 @@ f8f400(jaune)
   box-shadow: none !important;
 
 }
-
+.mainmenu {
+  background: none;
+  border: 0 solid;
+  margin: 0;
+  padding: 0;
+  min-height: 20px;
+}
 
 .mainmenu a,
-.navbar-default .navbar-nav>li>a,
+/* .navbar-default .navbar-nav>li>a, */
 .mainmenu ul li a,
 .navbar-expand-lg .navbar-nav .nav-link {
   color: rgb(7, 7, 7);
@@ -120,21 +126,15 @@ f8f400(jaune)
 .mainmenu .active a:hover,
 .mainmenu li a:hover,
 .mainmenu li a:focus,
-.navbar-default .navbar-nav>.show>a,
-.navbar-default .navbar-nav>.show>a:focus,
-.navbar-default .navbar-nav>.show>a:hover {
+/* .navbar-default .navbar-nav>.show>a, */
+/* .navbar-default .navbar-nav>.show>a:focus,
+.navbar-default .navbar-nav>.show>a:hover  */{
   color: #00a8ec;
   outline: 0;
 }
 
 /******************************Drop-down menu work on hover**********************************/
-.mainmenu {
-  background: none;
-  border: 0 solid;
-  margin: 0;
-  padding: 0;
-  min-height: 20px;
-}
+
 
 /*----------------------------------*/
 .list-inline a {
@@ -259,18 +259,18 @@ f8f400(jaune)
     display: block
   }
 
-  .mainmenu .collapse ul ul ul {
+  .mainmenu .collapse ul ul  {
     position: absolute;
     top: 0;
     left: 100%;
-    /* min-width: 250px; */
+    min-width: 250px;
     display: none
   }
 
-  /*******/
-  /* .mainmenu .collapse ul ul ul li {
+  /* ******/
+   /* .mainmenu .collapse ul ul ul li {
     position: relative
-  }
+  } */
 
   .mainmenu .collapse ul ul ul li:hover ul {
     display: block
@@ -283,7 +283,7 @@ f8f400(jaune)
     min-width: 250px;
     display: none;
     z-index: 1
-  } */
+  } 
 
 }
 
@@ -299,7 +299,7 @@ f8f400(jaune)
   .navbar-collapse {
     z-index: 2;
     position: absolute;
-    background-color: rgb(247, 12, 12);
+    background-color: rgb(255, 255, 255);
     margin-top: 380px;
     width: 100%;
   }
