@@ -80,3 +80,5 @@ Validation JS et Bootstrap du 20/12/2019
         Ajout du Slider en bootstrap avec des titres et boutons de liens ! (Nouveau !!!)  ou pur Slider javaScript si vous préférez
         modification des breakpoints (576(sm) et 992(lg)pour s'adapter à Bootstrap
         réalisation d'une fenêtre modale pour la connexion
+<!--------------------------------------------------------------------------------------------------------------------------------------->
+[![Maintainability](https://api.codeclimate.com/v1/badges/4fdc1d0232803bafe8bc/maintainability)](https://codeclimate.com/github/helfina/Projet-Kercode4-2019-2020/maintainability)
