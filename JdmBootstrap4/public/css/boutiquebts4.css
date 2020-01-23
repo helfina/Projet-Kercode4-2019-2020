@@ -4,6 +4,10 @@ ffaea0
 f59fbc(rose)
 f8f400(jaune)
 */
+a {
+  text-decoration: none;
+  color: black;
+}
 /*---------------slider------------------------*/
 #slider {
   position: relative;
@@ -43,61 +47,52 @@ f8f400(jaune)
 
 /*-----------------------------------------------------------*/
 
-/*----mega menu hover-------r*/
+/*----mega menu hover-------r/
 
-.Professionels {
-  border-top: 5px solid red;
+.Professionels,
+.Professionels .dropdown-menu {
+  border-top: 3px solid red;
 }
 
-.besoins_specifique {
-  border-top: 5px solid green;
+.besoins_specifique,
+.besoins_specifique .dropdown-menu{
+  border-top: 3px solid green;
 }
-
-.espaces_multisensoriels {
-  border-top: 5px solid purple;
+.espaces_multisensoriels,
+.espaces_multisensoriels .dropdown-menu{
+  border-top: 3px solid purple;
 }
-
-.sensorialite {
-  border-top: 5px solid rgb(12, 190, 245);
+.sensorialite,
+.sensorialite .dropdown-menu{
+  border-top: 3px solid rgb(12, 190, 245);
 }
-
-.motricite {
-  border-top: 5px solid rgb(115, 243, 211);
+.motricite,
+.motricite .dropdown-menu{
+  border-top: 3px solid rgb(115, 243, 211);
 }
-
-.language {
-  border-top: 5px solid rgb(243, 168, 5);
+.language,
+.language .dropdown-menu{
+  border-top: 3px solid rgb(243, 168, 5);
 }
-
-.apprentissage {
-  border-top: 5px solid rgb(248, 100, 248);
+.apprentissage,
+.apprentissage .dropdown-menu{
+  border-top: 3px solid rgb(248, 100, 248);
 }
-
-.competence_sociales {
-  border-top: 5px solid rgb(243, 100, 4);
+.competence_sociales,
+.competence_sociales .dropdown-menu{
+  border-top: 3px solid rgb(243, 100, 4);
 }
-
-.creativite {
-  border-top: 5px solid rgb(93, 252, 79);
+.creativite,
+.creativite .dropdown-menu{
+  border-top: 3px solid rgb(93, 252, 79);
 }
-
-.autonomie {
-  border-top: 5px solid rgb(1, 196, 255);
+.autonomie,
+.autonomie .dropdown-menu{
+  border-top: 3px solid rgb(1, 196, 255);
 }
-
-.inclusion {
-  border-top: 5px solid rgb(122, 26, 2);
-}
-
-.dropdown-menu {
-  padding: 0;
-  margin: 0;
-  border: 0 solid transition !important;
-  border: 0 solid rgba(0, 0, 0, .15);
-  border-radius: 0;
-  -webkit-box-shadow: none !important;
-  box-shadow: none !important;
-
+.inclusion,
+.inclusion .dropdown-menu{
+  border-top: 3px solid rgb(122, 26, 2);
 }
 .mainmenu {
   background: none;
@@ -106,14 +101,21 @@ f8f400(jaune)
   padding: 0;
   min-height: 20px;
 }
+.mainmenu a{
+  padding: 16px 15px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: capitalize;
+}
 
-.mainmenu a,
-/* .navbar-default .navbar-nav>li>a, */
+/*.mainmenu a,
+.navbar-default .navbar-nav>li>a,
 .mainmenu ul li a,
 .navbar-expand-lg .navbar-nav .nav-link {
   color: rgb(7, 7, 7);
   font-size: 14.35px;
-  text-transform: capitalize;
+  
   padding: 16px 15px;
   font-family: 'Dosis', sans-serif;
   font-weight: 800;
@@ -126,11 +128,21 @@ f8f400(jaune)
 .mainmenu .active a:hover,
 .mainmenu li a:hover,
 .mainmenu li a:focus,
-/* .navbar-default .navbar-nav>.show>a, */
-/* .navbar-default .navbar-nav>.show>a:focus,
-.navbar-default .navbar-nav>.show>a:hover  */{
+.navbar-default .navbar-nav>.show>a,
+.navbar-default .navbar-nav>.show>a:focus,
+.navbar-default .navbar-nav>.show>a:hover {
   color: #00a8ec;
   outline: 0;
+} */
+
+/* .dropdown-menu {
+  padding: 0;
+  margin: 0;
+  border: 0 solid transition !important;
+  border: 0 solid rgba(0, 0, 0, .15);
+  border-radius: 0;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
 }
 
 /******************************Drop-down menu work on hover**********************************/
@@ -237,7 +249,7 @@ f8f400(jaune)
 }
 
 /*-----------------media---- mega menu--------------------*/
-@media only screen and (min-width: 767px) {
+/*@media only screen and (min-width: 767px) { 
   .mainmenu .collapse ul li:hover>ul {
     display: block
   }
@@ -250,7 +262,7 @@ f8f400(jaune)
     display: none
   }
 
-  /*******/
+  /*******
   .mainmenu .collapse ul ul li {
     position: relative
   }
@@ -267,10 +279,10 @@ f8f400(jaune)
     display: none
   }
 
-  /* ******/
-   /* .mainmenu .collapse ul ul ul li {
+  /* ******
+    .mainmenu .collapse ul ul ul li {
     position: relative
-  } */
+  } 
 
   .mainmenu .collapse ul ul ul li:hover ul {
     display: block
@@ -304,4 +316,4 @@ f8f400(jaune)
     width: 100%;
   }
 
-}
+} */

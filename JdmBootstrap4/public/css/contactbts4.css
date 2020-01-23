@@ -24,3 +24,7 @@ body {
 .contact-form button:focus{
     box-shadow:none;
 }
+#map{
+    width: 100%;
+    height: 400px;
+}
