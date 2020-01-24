@@ -7,8 +7,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!--referencement-->
-    <!--api map-->
-<script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
+
 <link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css"/>
 
 
@@ -21,20 +20,7 @@
     
     <link rel="stylesheet" href="public/css/stylebts4.css">
     <link rel="stylesheet" href="public/css/contactbts4.css">
-    <!--sript test map api
-    <script type="text/javascript">
-        window.onload = function() {
-          L.mapquest.key = 'lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24';
-  
-          var map = L.mapquest.map('map', {
-            center: [37.7749, -122.4194],
-            layers: L.mapquest.tileLayer('map'),
-            zoom: 12
-          });
-  
-          map.addControl(L.mapquest.control());
-        }
-      </script>-->
+ 
 
 </head>
 
@@ -113,14 +99,9 @@
                                         <main class=" container modal-body">
                                             <div class="row">
                                                 <section class=" col-12 col-md-6 col-lg-6">
-                                                    <img src="public/img/parent.jpg"
+                                                    <img src="public/img/logo.png"
                                                         class="rounded-circle img-fluid img-border">
-                                                </section>
-                                                <section class="col-12 col-md-6 col-lg-6">
-                                                    <img src="public/img/espace_enfant.jpg"
-                                                        class="rounded-circle img-fluid img-border">
-                                                </section>
-                                                <hr>
+                                                </section> <hr>
                                             </div>
 
                                             <div class="row ">
@@ -137,10 +118,6 @@
                                                         </p>
                                                         <!------------date de naissance-------------->
                                                         <p class="col-12">
-                                                            <label for="date">Date de Naissance</label>
-                                                            <input type="date" id="date" placeholder="votre date de naissance" required>
-                                                        </p>
-                                                        <p class="col-12">
                                                             <input type="email" id="email" class="form-control" placeholder="votre e-mail" required>
                                                         </p>
                                                         <p class="col-6">
@@ -156,12 +133,10 @@
                                                     <fieldset class="p-3">
                                                         <legend>Me connecter</legend>
                                                         <p class="text-center">
-                                                            <label for="identifiant">Mon identifiant</label>
                                                             <input type="text" id="identifiant"
                                                                 placeholder=" identifiant" required>
                                                         </p>
                                                         <p class="text-center">
-                                                            <label for="mdp">Votre mot de Passe</label>
                                                             <input type="password" id="mdp" placeholder="password" required>
                                                         </p>
                                                         <button type="submit" class="btn btn-outline-success btn-block" >Me connectez</button>
@@ -217,6 +192,7 @@
                           <div class="col-sm-10">          
                             <input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname" required>
                           </div>
+                          <span id="noName"></span>
                         </div>
                         <!--prenom-->
                         <div class="form-group">
@@ -224,6 +200,7 @@
                           <div class="col-sm-10">          
                             <input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname" required>
                           </div>
+                          <span id="missPrenom"></span>
                         </div>
                         <!--tel-->
                         <div class="form-group">
@@ -231,14 +208,23 @@
                             <div class="col-sm-10">
                               <input type="tel" class="form-control" id="tel" placeholder="Enter tel" name="tel" required>
                             </div>
+                            <span id="noTel"></span>
                           </div>
                         <!--email-->
                         <div class="form-group">
                           <label class="control-label col-sm-2" for="email">Email:</label>
                           <div class="col-sm-10">
-                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+                            <input type="email" class="form-control" id="mail" placeholder="Enter email" name="email" required>
                           </div>
+                          <span id="noMail"></span>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
                         </div>
+                        <!--objet-->
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="comment">Objet:</label>
+                            <div class="col-sm-10">
+                              <input type="text" class="form-control" rows="1" id="comment"></input>
+                            </div>
+                          </div>
                         <!--message-->
                         <div class="form-group">
                           <label class="control-label col-sm-2" for="comment">Message:</label>
@@ -249,7 +235,7 @@
                         <!---btn validation-->
                         <div class="form-group">        
                           <div class="col-sm-offset-2 col-sm-10">
-                            <button type="submit" class="btn btn-outline-primary">Envoyez</button>
+                            <button type="submit" id="btnEnvoi" class="btn btn-outline-primary">Envoyez</button>
                           </div>
                         </div>
                     </form>
@@ -360,9 +346,8 @@
         </div>
     </footer>
    <!-- mes feuilles JS---->
-      <script src="API/maps.js"></script>
+      <!-- <script src="API/maps.js"></script> -->
       <script src="public/JS/boutontopbts4.js"></script>
-      <script type="text/javascript" src="public/js/cookiesbts4.js"></script>
       <script src="public/JS/contact.js"></script>
   
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -18,6 +18,7 @@ function hidden(){
   //je lui dit quand tu vas cliquer sur ton bouton ils se masquera
   document.getElementById("cookies").style.display = "none";
 }
+// localStorage.setItem("document.getElementById('ok')");
 /*-----------------------------------------------------------------------
 //si l'utilisateur accepte
 document.getElementById("agree").addEventListener("click", hideCookiebar);
