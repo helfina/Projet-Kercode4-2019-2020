@@ -1,94 +1,50 @@
-
-//------------------prenom--------------------------
-let formValid = document.getElementById('btnEnvoi');
-let prenom = document.getElementById('prenomContact');
-let missPrenom = document.getElementById('missPrenom');
+//-------------------------regex-------------------------------------
 let prenomValid = /^[a-zA-ZéèîïÉÈÎÏ]{2,}[a-zéèêàçîï]+([-'\s][a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]+)?$/
-
-formValid.addEventListener('click', validPrenom);
-
-function validPrenom(event) {
-    //Si le champ est vide
-    if (prenom.validity.valueMissing) {        
-        event.preventDefault();       
-        missPrenom.textContent = 'Prénom manquant';
-        missPrenom.style.color = 'red';
-    } else if (prenomValid.test(prenom.value) == false) {
-        event.preventDefault();
-        missPrenom.textContent = 'Format incorrect';
-        missPrenom.style.color = 'orange';
-    } else {
-        missPrenom.textContent = '\u2714';
-        missPrenom.style.color = 'green';
-        console.log('ok')}
-}
-// ---------------nom-----------------------------------
-let nom = document.getElementById('nomContact');
-let noName = document.getElementById('noName');
 let nomValid = /^[a-zA-ZéèîïÉÈÎÏ]{2,}[a-zéèêàçîï]+([-'\s][a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]+)?$/
-
-formValid.addEventListener('click', validNom);
-
-function validNom(event) {
-    //Si le champ est vide
-    if (nom.validity.valueMissing) {    
-        event.preventDefault();
-        noName.textContent = 'nom manquant';
-        noName.style.color = 'red';
-        //Si le format de données est incorrect
-    } else if (nomValid.test(nom.value) == false) {
-        event.preventDefault();
-        noName.textContent = 'Format incorrect';
-        noName.style.color = 'orange';
-    } else {
-        noName.textContent = '\u2714';
-        noName.style.color = 'green';
-        console.log('ok')}
-}
-//----------mail-------------------------------------
-let mail = document.getElementById('emailContact');
-let noMail = document.getElementById('noMail');
-let mailValid =  /^[a-zA-Z0-9.-]+@[a-z0-9.-]+.[com|fr]{2,4}$/;
-
-formValid.addEventListener('click', validMail);
-
-function validMail(event) {
-    //Si le champ est vide
-    if (mail.validity.valueMissing) {
-        event.preventDefault();
-        noMail.textContent = 'Mail manquant';
-        noMail.style.color = 'red';
-        //Si le format de données est incorrect
-    } else if (mailValid.test(mail.value) == false) {
-        event.preventDefault();
-        noMail.textContent = 'Format incorrect';
-        noMail.style.color = 'orange';
-    } else {
-        noMail.textContent = '\u2714';
-        noMail.style.color = 'green';
-        // console.log('ok')
-    }
-}
-//--------------tel--------------
-let tel = document.getElementById('telContact');
-let noTel = document.getElementById('noTel');
+let mailValid = /^[a-zA-Z0-9.-]+@[a-z0-9.-]+.[com|fr]{2,4}$/;
 let telValid = /^((\+)33|0)[1-9](\d{2}){4}$/;
-formValid.addEventListener('click', validTel);
 
-function validTel(event) {
+//----------------var--prenom--------------------------
+let formValid = document.getElementById('btnEnvoi');
+let prenom = document.getElementById('lname');
+// let missPrenom = document.getElementById('missPrenom');
+// -----------var----nom-----------------------------------
+let nom = document.getElementById('fname');
+// let noName = document.getElementById('noName');
+//----------mail-------------------------------------
+let mail = document.getElementById('email');
+// let noMail = document.getElementById('noMail');
+//---------var-----tel--------------
+let tel = document.getElementById('tel');
+// let noTel = document.getElementById('noTel');
+//------------------------------------------------
+let error = document.getElementsByTagName('span')
+// element = document.getElementsByTagName('input')
+//----------------------------------------------
+
+formValid.addEventListener('click', function (event) {
+    validContactForm(event, prenom, prenomValid,error);
+    validContactForm(event, nom, nomValid, error);
+    validContactForm(event, mail, mailValid, error );
+    validContactForm(event, tel, telValid, error );
+    // console.log(event);
+
+
+});
+//------------------prenom--------------------------
+function validContactForm(event) {
     //Si le champ est vide
-    if (tel.validity.valueMissing) {
+    if (Element.validity.valueMissing) {
         event.preventDefault();
-        noTel.textContent = 'tel manquant';
-        noTel.style.color = 'red';
-        //Si le format de données est incorrect
-    } else if (telValid.test(tel.value) == false) {
+        output.textContent = 'contenu manquant';
+        error.style.color = 'red';
+    } else if (ElementValid.test(Element.value) == false) {
         event.preventDefault();
-        noTel.textContent = 'Format incorrect';
-        noTel.style.color = 'orange';
+        output.textContent = 'Format incorrect';
+        error.style.color = 'orange';
     } else {
-        noTel.textContent = '\u2714';
-        noTel.style.color = 'green';
+        output.textContent = '\u2714';
+        error.style.color = 'green';
         console.log('ok')
     }
 }
