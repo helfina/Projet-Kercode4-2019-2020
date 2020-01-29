@@ -2,32 +2,29 @@ $(document).ready(function(){
     $('#click').click(function () { 
         console.log("ok");
         // e.preventDefault();        
-  
 
-    var apiUrl = "https://slack.com/api/chat.postMessage";
-    var token = 'xoxb-924880165296-927097674278-mncEKSmYH9kFvbnaQh9mDWTj';
-    var channel = "#bot";
-    var text = document.getElementById('comment').value;
-    
-    
-     $.ajax({                   
-        data: {
-            "token": token,
-            "channel": channel,
-            "text": text,
-         
-        },                      
-        dataType: 'text',
-        type: 'POST',           
-        url: apiUrl,
-        error: function(xhr,status,error){              
-            console.log("error: " + error);
-        },
-        success: function(data) {
-            console.log("result: " + data);
-        }
+        var apiUrl = "https://slack.com/api/chat.postMessage";
+        var channel = "#bot";
+        var text = document.getElementById('comment').value;
+        
+        
+        $.ajax({                   
+            data: {
+                "token": creds.token,
+                "channel": channel,
+                "text": text,
+            },                      
+            dataType: 'text',
+            type: 'POST',           
+            url: apiUrl,
+            error: function(xhr,status,error){              
+                console.log("error: " + error);
+            },
+            success: function(data) {
+                console.log("result: " + data);
+            }
+        });
     });
-  });
 
   });
 

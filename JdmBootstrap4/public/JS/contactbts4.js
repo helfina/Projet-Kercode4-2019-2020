@@ -26,7 +26,7 @@ let error = document.getElementById('feedback')
 
 
 
-//-------------------japelle---------------------------
+//-------------------japelle----i call-----------------------
 
 formValid.addEventListener('click', function (event) {
     validContactForm(event, prenom, prenomValid,error);
@@ -37,7 +37,7 @@ formValid.addEventListener('click', function (event) {
 
 
 });
-//----------------------je recois--------------------
+//----------------------je recois----i receved----------------
 function validContactForm(event, Element, ElementValid, error) {
     //Si le champ est vide
     if (Element.validity.valueMissing) {
