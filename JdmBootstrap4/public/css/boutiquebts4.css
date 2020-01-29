@@ -44,7 +44,17 @@ a {
 #slider:hover #suivant {
   opacity: 1;
 }
+/*-----------------------------------------------------------*/
+.list-inline a {
+  text-decoration: none;
+  color: black;
+}
 
+.list-inline a:hover {
+  color: #00a8ec;
+  text-decoration-color: #00a8ec;
+  -moz-text-decoration-color: #00a8ec;
+}
 /*-----------------------------------------------------------*/
 .card{
   margin: 2px;
@@ -60,17 +70,6 @@ a {
   font-size: 14px;
 }
 /*----------------------------------*/
-.list-inline a {
-  text-decoration: none;
-  color: black;
-}
-
-.list-inline a:hover {
-  color: #00a8ec;
-  text-decoration-color: #00a8ec;
-  -moz-text-decoration-color: #00a8ec;
-}
-
 .bouton {
   display: inline-block;
   text-align: center;
@@ -93,7 +92,6 @@ a {
   -webkit-transition: 0.3s all ease;
   transition: 0.3s all ease;
 }
-
 /*----------bloc1--------------*/
 .bloc1 {
   padding: 15px;
@@ -121,3 +119,11 @@ a {
 .empathie {
   box-shadow: 3px 3px 3px 3px skyblue;
 }
+/*---------------------------------------------------*/
+footer a {
+ color: white;
+}
+footer a:hover{
+  color:#00a8ec ;
+}
+@media
