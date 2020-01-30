@@ -93,9 +93,6 @@ a:hover {
     margin: 30%;
 }
 
-.mail{
-    /* margin-top: 10px; */
-}
 ::placeholder{
     text-align: center;
 }
@@ -184,6 +181,9 @@ Footer .box{
 }
 footer h2{
     font-family: 'Dancing Script', cursive; 
+}
+footer aside{
+    margin-top: 30px;
 }
 .footertop ul li {
     list-style-type: none;
