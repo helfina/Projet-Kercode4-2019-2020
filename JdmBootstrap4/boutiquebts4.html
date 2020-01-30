@@ -46,8 +46,8 @@
                                                 <ul class="navbar-nav">
                                                         <li class="nav-item mr-3">
                                                                 <button type="button" class="btn btn-dark">
-                                                                        <a class="active" href="indexbts4.html">
-                                                                                <i class="fa fa-fw fa-home active"></i>
+                                                                        <a href="indexbts4.html">
+                                                                                <i class="fa fa-fw fa-home"></i>
                                                                                 Accueil
                                                                         </a>
                                                                 </button>
@@ -62,8 +62,9 @@
                                                         </li>
                                                         <li class="nav-item mr-3">
                                                                 <button type="button" class="btn btn-dark">
-                                                                        <a href="#">
-                                                                                <i class="fa fa-cart-arrow-down"></i>
+                                                                        <a class="active" href="#">
+                                                                                <i
+                                                                                        class="fa fa-cart-arrow-down active"></i>
                                                                                 Boutique
                                                                         </a>
                                                                 </button>
@@ -99,37 +100,38 @@
                                                                                         <header
                                                                                                 class="modal-header bg-primary">
                                                                                                 <h4 class="modal-title">
-                                                                                                        Espace
-                                                                                                        Privé</h4>
+                                                                                                        Espace Privé
+                                                                                                </h4>
                                                                                                 <button type="button"
                                                                                                         class="close"
                                                                                                         data-dismiss="modal">&times;</button>
                                                                                         </header>
 
                                                                                         <!-- Modal body -->
-                                                                                        <main class=" modal-body">
+                                                                                        <main
+                                                                                                class=" container modal-body">
                                                                                                 <div class="row">
-                                                                                                        <figure
-                                                                                                                class=" col-12 col-md-6 col-lg-6">
+                                                                                                        <section
+                                                                                                                class=" col-12">
                                                                                                                 <img src="public/img/parent.jpg"
-                                                                                                                        class="rounded-circle img-fluid img-border">
-                                                                                                        </figure>
+                                                                                                                        class="img-thumbnail img-fluid">
+                                                                                                        </section>
                                                                                                         <hr>
                                                                                                 </div>
-
-                                                                                                <div class="row ">
-                                                                                                        <form
-                                                                                                                class="form-inline col-12 col-md-6 col-lg-6  justify-content-center">
-                                                                                                                <fieldset
-                                                                                                                        class="inscription  d-flex flex-wrap p-1">
-                                                                                                                        <legend>M'inscrire
-                                                                                                                        </legend>
-                                                                                                                        <!---------------nom/prenom---------------->
-
+                                                                                                <section>
+                                                                                                        <fieldset
+                                                                                                                class=" inscription form-group w-100 m-1 p-2">
+                                                                                                                <legend
+                                                                                                                        class="text-center">
+                                                                                                                        M'inscrire
+                                                                                                                </legend>
+                                                                                                                <!---------------nom/prenom---------------->
+                                                                                                                <div
+                                                                                                                        class="row">
                                                                                                                         <p
                                                                                                                                 class="col-6">
                                                                                                                                 <input type="text"
-                                                                                                                                        id="nom"
+                                                                                                                                        id="lname"
                                                                                                                                         placeholder="Nom"
                                                                                                                                         class="form-control"
                                                                                                                                         required>
@@ -137,32 +139,52 @@
                                                                                                                         <p
                                                                                                                                 class="col-6">
                                                                                                                                 <input type="text"
-                                                                                                                                        id="prenom"
+                                                                                                                                        id="fname"
                                                                                                                                         placeholder="Prenom"
                                                                                                                                         class="form-control"
                                                                                                                                         required>
                                                                                                                         </p>
-                                                                                                                        <!------------date de naissance-------------->
+                                                                                                                        <!------------adresse-------------->
                                                                                                                         <p
-                                                                                                                                class="col-12">
-                                                                                                                                <label class="m-1"
-                                                                                                                                        for="date">Date
-                                                                                                                                        de
-                                                                                                                                        Naissance</label>
-                                                                                                                                <input type="date"
-                                                                                                                                        id="date"
-                                                                                                                                        class="form-control w-100"
-                                                                                                                                        placeholder="votre date de naissance"
-                                                                                                                                        required>
+                                                                                                                                class="col-6">
+
+                                                                                                                                <input type="text"
+                                                                                                                                        name="zipecode"
+                                                                                                                                        class="form-control"
+                                                                                                                                        placeholder="Code postal"
+                                                                                                                                        id="zipcode">
+                                                                                                                                <div
+                                                                                                                                        id="error-message">
+                                                                                                                                </div>
                                                                                                                         </p>
                                                                                                                         <p
-                                                                                                                                class="col-12">
+                                                                                                                                class="col-6">
+                                                                                                                                <select class="form-control"
+                                                                                                                                        name="city"
+                                                                                                                                        id="city">
+                                                                                                                                        <option
+                                                                                                                                                value="">
+                                                                                                                                                Selectionnez une Ville
+                                                                                                                                        </option>
+                                                                                                                                </select>
+                                                                                                                        </p>
+                                                                                                                        <p
+                                                                                                                                class="col-6">
+                                                                                                                                <input type="text" name="adresse" class="form-control"
+                                                                                                                                placeholder="Adresse" id="adresse">
+                                                                                                                                <div id="wrapper">
+                                                                                                                                </div>
+                                                                                                                        </p>
+
+                                                                                                                        <p
+                                                                                                                                class="mail col-6">
                                                                                                                                 <input type="email"
                                                                                                                                         id="email"
                                                                                                                                         class="form-control"
                                                                                                                                         placeholder="votre e-mail"
                                                                                                                                         required>
                                                                                                                         </p>
+
                                                                                                                         <p
                                                                                                                                 class="col-6">
                                                                                                                                 <input type="password"
@@ -179,54 +201,47 @@
                                                                                                                                         placeholder="confirm password"
                                                                                                                                         required>
                                                                                                                         </p>
-                                                                                                                        <button type="submit"
-                                                                                                                                class="btn btn-outline-success btn-block">M'inscrire</button>
-                                                                                                                </fieldset>
-                                                                                                        </form>
-                                                                                                        <form
-                                                                                                                class=" form-inline col-12 col-md-6 col-lg-6 justify-content-center">
-                                                                                                                <fieldset
-                                                                                                                        class="p-3">
-                                                                                                                        <legend>Me
-                                                                                                                                connecter
-                                                                                                                        </legend>
+                                                                                                                </div>
+                                                                                                                <div
+                                                                                                                        id="feedback">
+                                                                                                                </div>
+                                                                                                                <button type="submit"
+                                                                                                                        class="col-12 btn btn-outline-success btn-block">
+                                                                                                                        M'inscrire</button>
+                                                                                                        </fieldset>
+
+                                                                                                        <fieldset
+                                                                                                                class="m-1 p-3">
+                                                                                                                <legend
+                                                                                                                        class="text-center">
+                                                                                                                        Me
+                                                                                                                        connecter
+                                                                                                                </legend>
+                                                                                                                <div
+                                                                                                                        class="row">
                                                                                                                         <p
-                                                                                                                                class="text-center">
-                                                                                                                                <label class="m-1"
-                                                                                                                                        for="identifiant">Mon
-                                                                                                                                        identifiant</label>
+                                                                                                                                class="col-6 text-center">
                                                                                                                                 <input type="text"
                                                                                                                                         id="identifiant"
-                                                                                                                                        placeholder=" identifiant">
+                                                                                                                                        class="form-control"
+                                                                                                                                        placeholder="Votre Identifiant">
                                                                                                                         </p>
                                                                                                                         <p
-                                                                                                                                class="text-center">
-                                                                                                                                <label class="m-1"
-                                                                                                                                        for="mdp">Votre
-                                                                                                                                        mot
-                                                                                                                                        de
-                                                                                                                                        Passe</label>
+                                                                                                                                class="col-6 text-center">
                                                                                                                                 <input type="password"
                                                                                                                                         id="mdp"
-                                                                                                                                        placeholder="password">
+                                                                                                                                        class="form-control"
+                                                                                                                                        placeholder="Votre Mot de passe">
                                                                                                                         </p>
-                                                                                                                        <p
-                                                                                                                                class="form-check form-check-inline">
-                                                                                                                                <input id="my-input"
-                                                                                                                                        class="form-check-input"
-                                                                                                                                        type="checkbox"
-                                                                                                                                        name=""
-                                                                                                                                        value="true">
-                                                                                                                                <label for="my-input"
-                                                                                                                                        class="form-check-label">remember
-                                                                                                                                        me</label>
-                                                                                                                        </p>
-                                                                                                                        <button type="submit"
-                                                                                                                                class="btn btn-outline-success btn-block">Me
-                                                                                                                                connectez</button>
-                                                                                                                </fieldset>
-                                                                                                        </form>
-                                                                                                </div>
+                                                                                                                </div>
+                                                                                                                <button type="submit"
+                                                                                                                        class="btn btn-outline-success btn-block">Me
+                                                                                                                        connectez</button>
+                                                                                                        </fieldset>
+                                                                                                </section>
+                                                                                                <!---------------------------------------------------->
+
+
                                                                                         </main>
 
                                                                                         <!-- Modal footer -->
@@ -285,8 +300,8 @@
                                 </li>
                         </ul>
                         <!------------------------------------------------------------------------------------------------------------------------------------------>
-                        <div class="row d-flex justify-content-around">
-                                <div class="card bg-dark text-white col-12 col-sm-6 col-lg-3">
+                        <div class="vignette row justify-content-between">
+                                <div class="card text-white col-12 col-sm-5 col-md-4 col-lg-3">
                                         <img class="card-img" src="public/img/kitzen.jpg" alt="Card image">
                                         <div class="card-img-overlay">
                                                 <h5 class="card-title">Besoins spécifiques</h5>
@@ -296,7 +311,7 @@
                                         </div>
                                 </div>
                                 <!--------------------------------------------------->
-                                <div class="card bg-dark text-white col-12 col-sm-6 col-lg-3">
+                                <div class="card text-white col-12 col-sm-5 col-md-4 col-lg-3">
                                         <img class="card-img" src="public/img/kitzen.jpg" alt="Card image">
                                         <div class="card-img-overlay">
                                                 <h5 class="card-title">Espaces Multisensoriels</h5>
@@ -312,7 +327,7 @@
                                         </div>
                                 </div>
                                 <!--------------------------------------------------->
-                                <div class="card bg-dark text-white col-12 col-sm-6 col-lg-3">
+                                <div class="card text-white col-12 col-sm-5 col-md-4 col-lg-3">
                                         <img class="card-img" src="public/img/kitzen.jpg" alt="Card image">
                                         <div class="card-img-overlay">
                                                 <h5 class="card-title">Sensorialité</h5>
@@ -325,7 +340,7 @@
                                         </div>
                                 </div>
                                 <!--------------------------------------------------->
-                                <div class="card bg-dark text-white col-12 col-sm-6 col-lg-3">
+                                <div class="card text-white col-12 col-sm-5 col-md-4  col-lg-3">
                                         <img class="card-img" src="public/img/kitzen.jpg" alt="Card image">
                                         <div class="card-img-overlay">
                                                 <h5 class="card-title">Motricité</h5>
@@ -338,7 +353,7 @@
                                         </div>
                                 </div>
                                 <!--------------------------------------------------->
-                                <div class="card bg-dark text-white col-12 col-sm-6 col-lg-3">
+                                <div class="card text-white col-12 col-sm-5 col-md-4 col-lg-3">
                                         <img class="card-img" src="public/img/kitzen.jpg" alt="Card image">
                                         <div class="card-img-overlay">
                                                 <h5 class="card-title">Language et Communication</h5>
@@ -349,7 +364,7 @@
                                         </div>
                                 </div>
                                 <!--------------------------------------------------->
-                                <div class="card bg-dark text-white col-12 col-sm-6 col-lg-3">
+                                <div class="card text-white col-12 col-sm-5 col-md-4 col-lg-3">
                                         <img class="card-img" src="public/img/kitzen.jpg" alt="Card image">
                                         <div class="card-img-overlay">
                                                 <h5 class="card-title">Apprentissage</h5>
@@ -360,7 +375,7 @@
                                         </div>
                                 </div>
                                 <!--------------------------------------------------->
-                                <div class="card bg-dark text-white col-12 col-sm-6 col-lg-3">
+                                <div class="card text-white col-12 col-sm-5 col-md-4 col-lg-3">
                                         <img class="card-img" src="public/img/kitzen.jpg" alt="Card image">
                                         <div class="card-img-overlay">
                                                 <h5 class="card-title">Compétences Sociales</h5>
@@ -371,7 +386,7 @@
                                         </div>
                                 </div>
                                 <!--------------------------------------------------->
-                                <div class="card bg-dark text-white col-12 col-sm-6 col-lg-3">
+                                <div class="card text-white col-12 col-sm-5 col-md-4 col-lg-3">
                                         <img class="card-img" src="public/img/kitzen.jpg" alt="Card image">
                                         <div class="card-img-overlay">
                                                 <h5 class="card-title">Créativités</h5>
@@ -382,7 +397,7 @@
                                         </div>
                                 </div>
                                 <!--------------------------------------------------->
-                                <div class="card bg-dark text-white col-12 col-sm-6 col-lg-3">
+                                <div class="card text-white col-12 col-sm-5 col-md-4 col-lg-3">
                                         <img class="card-img" src="public/img/kitzen.jpg" alt="Card image">
                                         <div class="card-img-overlay">
                                                 <h5 class="card-title">Autonomie</h5>
@@ -393,7 +408,7 @@
                                         </div>
                                 </div>
                                 <!--------------------------------------------------->
-                                <div class="card bg-dark text-white col-12 col-sm-6 col-lg-3">
+                                <div class="card text-white col-12 col-sm-5 col-md-4 col-lg-3">
                                         <img class="card-img" src="public/img/kitzen.jpg" alt="Card image">
                                         <div class="card-img-overlay">
                                                 <h5 class="card-title">Inclusion</h5>
@@ -405,7 +420,7 @@
                                 </div>
                                 <!------------------------------------------------------------------------------------------------------------------------------------------>
 
-                                <!-------------------------------bloc 1------------------------------------->
+                                <!-------------------------------bloc 1-------------------------
                                 <div class="row bloc1">
                                         <section class="col-xs-12 col-md-12 col-lg-12 d-flex p-1 pb-3 m-1 equilibre">
                                                 <figure class="col-xs-6 col-md-6 col-lg-6 pt-3">
@@ -438,96 +453,83 @@
                                                 </figure>
                                         </section>
                                 </div>
-
-
-                                <img src="public/img/V_plateaux-montessori_2.jpg" alt="#" class="img-fluid mb-3 mt-2">
+                                <img src="public/img/V_plateaux-montessori_2.jpg" alt="#" class="montessori img-fluid mb-3 mt-2">------------>
 
 
                 </main>
 
                 <!-------------------------------------------footer-------------------------------------------------------------------------------->
                 <footer class="container-fluid bg-dark foot">
-
                         <!-----------------------------reseaux--------------------------------->
-                        <header class="box shadow p-4 mb-4 border border-primary">
-                                <div class="container">
-                                        <section class="row">
-                                                <!-------------------fbook---------------------------------------->
-                                                <article class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pb-3">
+                        <div class="container">
+                                <aside class="row shadow p-4 mb-4 border border-primary">
+                                        <!-------------------fbook---------------------------------------->
+                                        <div class="box-part text-center col-lg-4 col-md-4 col-sm-4 col-xs-12 pb-3">
 
-                                                        <aside class="box-part text-center">
+                                                <i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
 
-                                                                <i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
+                                                <div class="title">
+                                                        <h4>Facebook</h4>
+                                                </div>
 
-                                                                <div class="title">
-                                                                        <h4>Facebook</h4>
-                                                                </div>
+                                                <div class="text">
+                                                        <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam.
+                                                                Assum decore te sed. Elitr
+                                                                scripta ocurreret qui ad.</span>
+                                                </div>
 
-                                                                <div class="text">
-                                                                        <span>Lorem ipsum dolor sit amet, id quo eruditi
-                                                                                eloquentiam. Assum decore te sed. Elitr
-                                                                                scripta ocurreret qui ad.</span>
-                                                                </div>
+                                                <a href="#">Learn More</a>
 
-                                                                <a href="#">Learn More</a>
+                                        </div>
 
-                                                        </aside>
-                                                </article>
-                                                <!--------------------instagram-------------------------------------->
-                                                <article class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pb-3">
+                                        <!--------------------instagram-------------------------------------->
+                                        <div class="box-part text-center col-lg-4 col-md-4 col-sm-4 col-xs-12 pb-3">
 
-                                                        <aside class="box-part text-center">
+                                                <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
 
-                                                                <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
+                                                <div class="title">
+                                                        <h4>Instagram</h4>
+                                                </div>
 
-                                                                <div class="title">
-                                                                        <h4>Instagram</h4>
-                                                                </div>
+                                                <div class="text">
+                                                        <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam.
+                                                                Assum decore te sed. Elitr
+                                                                scripta ocurreret qui ad.</span>
+                                                </div>
 
-                                                                <div class="text">
-                                                                        <span>Lorem ipsum dolor sit amet, id quo eruditi
-                                                                                eloquentiam. Assum decore te sed. Elitr
-                                                                                scripta ocurreret qui ad.</span>
-                                                                </div>
+                                                <a href="#">Learn More</a>
 
-                                                                <a href="#">Learn More</a>
+                                        </div>
 
-                                                        </aside>
-                                                </article>
-                                                <!------------------------------pinterest--------------------------->
-                                                <article class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                        <!------------------------------pinterest--------------------------->
+                                        <div class="box-part text-center col-lg-4 col-md-4 col-sm-4 col-xs-12">
 
-                                                        <aside class="box-part text-center">
+                                                <i class="fa fa-pinterest-p fa-3x" aria-hidden="true"></i>
 
-                                                                <i class="fa fa-pinterest-p fa-3x"
-                                                                        aria-hidden="true"></i>
+                                                <div class="title">
+                                                        <h4>Pinterest</h4>
+                                                </div>
 
-                                                                <div class="title">
-                                                                        <h4>Pinterest</h4>
-                                                                </div>
+                                                <div class="text">
+                                                        <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam.
+                                                                Assum decore te sed. Elitr
+                                                                scripta ocurreret qui ad.</span>
+                                                </div>
 
-                                                                <div class="text">
-                                                                        <span>Lorem ipsum dolor sit amet, id quo eruditi
-                                                                                eloquentiam. Assum decore te sed. Elitr
-                                                                                scripta ocurreret qui ad.</span>
-                                                                </div>
+                                                <a href="#">Learn More</a>
 
-                                                                <a href="#">Learn More</a>
+                                        </div>
 
-                                                        </aside>
-                                                </article>
-                                        </section>
-                                </div>
-                        </header>
-                        <!-------------------------------pied de page------------------------------------->
-                        <main class="container">
+                                </aside>
+                                <!-------------------------------pied de page------------------------------------->
+
                                 <section class="row footertop text-center">
-                                        <article class="col-12 col-md-3 col-lg-3">
+                                        <adresse class="adres col-12 col-md-3 col-lg-3">
                                                 <h2>Jeux de Mômes</h2>
                                                 <p>20, Avenue Winstone churchill<br>56000 VANNES<br>tel: 02.97.55.99.33
                                                 </p>
-                                        </article>
-                                        <div class=" col-12 col-md-3 col-lg-3 ">
+                                        </adresse>
+                                        <div class="map col-12 col-md-3 col-lg-3 ">
                                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2687.9200117362298!2d-2.7750422852591687!3d47.64712119317253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48101c1e45bf9d89%3A0xf1b4ec0fcc4d768d!2s20%20Rue%20Winston%20Churchill%2C%2056000%20Vannes!5e0!3m2!1sfr!2sfr!4v1578149354549!5m2!1sfr!2sfr"
                                                         frameborder="0" style="border:0;" allowfullscreen=""
                                                         class="img-fluid">
@@ -537,8 +539,9 @@
                                         <ul class="col-12 col-md-3 col-lg-3 text-center ">
                                                 <li><a href="indexbts4.html">Accueil</a></li>
                                                 <li><a href="aproposbts4.html">A propos</a></li>
-                                                <li><a href="contactbts4.html">Contact</a></li>
-                                                <li><a href="API/geoApi.html">API</a></li>
+                                                <li><a href="API'S_test\CP_geoAPI\CPGeoApi.js">APIcodePostal</a></li>
+                                                <li><a href="API'S_test\API Adresse\geo-gouv_adressApi.html">APIadresse</a>
+                                                </li>
                                         </ul>
 
                                         <ul class="col-12 col-md-3 col-lg-3 text-center">
@@ -549,32 +552,29 @@
                                                 <li><a href="plandusite.html">Plan du site</a></li>
                                         </ul>
                                 </section>
-                                <section class="row footerbottom justify-content-around">
-                                        <p>&copy;G.K 2019 tous droits réservés</p>
-                                </section>
-                        </main>
+                                <p class="row footerbottom justify-content-around m-1">
+                                        <span>&copy;G.K 2019 tous droits réservés</span>
+                                </p>
+
                 </footer>
                 <!-- mes feuilles JS---->
-
-                <script src="public/JS/slider.js"></script>
-                <script src="public/JS/dropdown-menu.js"></script>
                 <script src="public/JS/boutontopbts4.js"></script>
-
-                <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-                <!--local<script src="public/JS/bootstrap.min.js"></script>-->
-                <!--local<script src="public/JS/jquery-3.4.1.min.js"></script>-->
-                <!--local<script src="public/JS/popper.min.js"></script>-->
+                <script type="text/javascript" src="public/js/cookiesbts4.js"></script>
 
                 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
                         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-                        crossorigin="anonymous"></script>
+                        crossorigin="anonymous">
+                </script>
                 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
                         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-                        crossorigin="anonymous"></script>
+                        crossorigin="anonymous">
+                </script>
                 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
                         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-                        crossorigin="anonymous"></script>
-        </div>
+                        crossorigin="anonymous">
+                </script>
+                <script src="public/JS/codePostalAPI.js"></script>
+
 </body>
 
 </html>

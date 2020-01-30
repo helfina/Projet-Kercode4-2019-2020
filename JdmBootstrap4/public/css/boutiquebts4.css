@@ -4,10 +4,7 @@ ffaea0
 f59fbc(rose)
 f8f400(jaune)
 */
-a {
-  text-decoration: none;
-  color: black;
-}
+
 /*---------------slider------------------------*/
 #slider {
   position: relative;
@@ -15,7 +12,7 @@ a {
 
 #slider img {
   width: 100%;
-  height: 400px;
+  height: auto;
 }
 
 /*------------------fleche slider---------------------*/
@@ -45,6 +42,10 @@ a {
   opacity: 1;
 }
 /*-----------------------------------------------------------*/
+.list-inline{
+  margin: 5%;
+  background-color: #f8f400;
+}
 .list-inline a {
   text-decoration: none;
   color: black;
@@ -56,11 +57,17 @@ a {
   -moz-text-decoration-color: #00a8ec;
 }
 /*-----------------------------------------------------------*/
+.vignette {
+  margin: 5%;
+}
 .card{
-  margin: 2px;
+  margin: 10px;
+  border: none;
+  /* box-shadow: 3px 3px 3px 3px #00a8ec; */
 }
 .card img{
   width: 100%;
+  border: 1px black;
 }
 .card h5{
   font-size: 18px;
@@ -120,10 +127,11 @@ a {
   box-shadow: 3px 3px 3px 3px skyblue;
 }
 /*---------------------------------------------------*/
-footer a {
- color: white;
+
+@media only screen and (max-width: 992px){
+.bloc1 ,
+.montessori{
+  display: none
 }
-footer a:hover{
-  color:#00a8ec ;
+
 }
-@media

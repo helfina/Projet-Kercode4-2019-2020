@@ -36,7 +36,11 @@ adresse.addEventListener("keyup", function () {
 
 });
 //-----------------gestion du style-------avec jq-----------
-// $(document).ready(function(){
-//     let city = $('#wrapper');
-//     $(city).append('<li'+value.nom+'">'+value.nom+'</li>');
-//   });
+$(document).ready(function(){
+    $("#wrapper").on("keyup", function() {
+      var value = $(this).val().toLowerCase();
+      $features.filter(function() {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+      });
+    });
+  });

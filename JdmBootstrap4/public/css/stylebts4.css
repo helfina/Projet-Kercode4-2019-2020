@@ -89,15 +89,20 @@ a:hover {
 
 .modal-body fieldset {
     border: 2px solid rgb(101, 6, 253);
-    padding: 15px; 
-    margin: 30px;
-    /* justify-content: center; */
+    padding: 15%; 
+    margin: 30%;
+}
+
+.mail{
+    /* margin-top: 10px; */
+}
+::placeholder{
+    text-align: center;
 }
 
 /*-------------------slider---------------------------*/
 .carousel-inner img {
     width: 100%;
-    
 }
 
 /*------------------main-------------------------------------*/
