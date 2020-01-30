@@ -29,6 +29,7 @@ let error = document.getElementById('feedback')
 //-------------------japelle----i call-----------------------
 
 formValid.addEventListener('click', function (event) {
+    console.log('yooo');
     validContactForm(event, prenom, prenomValid,error);
     validContactForm(event, nom, nomValid, error);
     validContactForm(event, mail, mailValid, error );
@@ -42,8 +43,9 @@ function validContactForm(event, Element, ElementValid, error) {
     //Si le champ est vide
     if (Element.validity.valueMissing) {
         event.preventDefault();
+        console.log('hummmmm')
         console.log(error);
-        error.textContent = 'contenu manquant';
+        error.innerText = 'contenu manquant';
         error.style.color = 'red';
     } else if (ElementValid.test(Element.value) == false) {
         event.preventDefault();
