@@ -70,8 +70,6 @@ f8f400(jaune)
 
 .card-img{
   width: 100%;
-  border: 1px black;
-
   opacity: 0.3;
 }
 .card h5{
@@ -91,7 +89,7 @@ f8f400(jaune)
   font-size: 16px;
   font-family: 'Dancing Script', cursive;
   font-weight: 700;
-  color: black;
+  color:#f59fbc ;
   align-items: center;
 }
 /*----------------------------------*/
