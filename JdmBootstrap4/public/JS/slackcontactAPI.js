@@ -3,22 +3,29 @@ $(document).ready(function(){
         console.log("ok");
         // e.preventDefault();        
 
-        var apiUrl = "https://slack.com/api/chat.postMessage";
-        var channel = "#bot";
-        var text = document.getElementById('comment').value;
+        let apiUrl = "https://slack.com/api/chat.postMessage";
+        let channel = "#bot";
+        let text = document.getElementById('comment').value;
+        let nom = document.getElementById('lname').value;
+        // let prenom = document.getElementById('fname').value;
+        let tel = document.getElementById('tel').value;
+        // let mail = document.getElementById('email').value;
+        // let tab = new [nom, prenom, tel, mail].values;
+
         
         
         $.ajax({                   
             data: {
                 "token": creds.token,
                 "channel": channel,
-                "text": text,
+                "text": tel+ ':' + text,
             },                      
             dataType: 'text',
             type: 'POST',           
             url: apiUrl,
             error: function(xhr,status,error){              
                 console.log("error: " + error);
+                
             },
             success: function(data) {
                 console.log("result: " + data);
