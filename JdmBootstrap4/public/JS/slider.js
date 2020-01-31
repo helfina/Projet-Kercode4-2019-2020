@@ -7,7 +7,7 @@
 *de type tableau slide en ajoutant un nom d'image correspondant
 *au slide.*/
 //-------------------------parti auto---------------------------------------------
-let slide = ["public/img/inclusion.jpg", "public/img/montesori.jpg","public/img/souffle.jpg","public/img/visuelle.jpg","public/img/slider_boutique/contraste.jpg"];
+let slide = ["public/img/inclusion.jpg", "public/img/montesori.jpg","public/img/souffle.jpg","public/img/visuelle.jpg","public/img/contraste.jpg"];
 let index = 0;
 
 setInterval(function(){

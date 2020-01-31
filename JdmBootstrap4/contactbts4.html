@@ -7,28 +7,26 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!--referencement-->
+    <!--api map-->
 
-<link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css"/>
-
-
-
-   <!-- Bootstrap CSS -->
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- Load an icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <!-- fonts -->
+     <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Raleway&display=swap" rel="stylesheet">
     <!--ma feuille de style-->
-    
     <link rel="stylesheet" href="public/css/stylebts4.css">
     <link rel="stylesheet" href="public/css/contactbts4.css">
- 
 
 </head>
 
 <body class="container-fluid m-0 p-0">
-    
+
     <header>
-    <!--petit bouton pour remonter en haut de la page-->
-    <button onclick="topFunction()" id="monBtn" title="allez en haut"><i class="fa fa-angle-double-up"></i></button>
+        <!--petit bouton pour remonter en haut de la page-->
+        <button onclick="topFunction()" id="monBtn" title="allez en haut"><i class="fa fa-angle-double-up"></i></button>
         <!--navbar-expand-sm=permet de l'aficher quand il diminue-->
         <nav class="navbar navbar-expand-lg bg-dark">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -43,7 +41,7 @@
                         <li class="nav-item mr-3">
                             <button type="button" class="btn btn-dark">
                                 <a href="indexbts4.html">
-                                    <i class="fa fa-fw fa-home active"></i>
+                                    <i class="fa fa-fw fa-home"></i>
                                     Accueil
                                 </a>
                             </button>
@@ -98,51 +96,82 @@
                                         <!-- Modal body -->
                                         <main class=" container modal-body">
                                             <div class="row">
-                                                <section class=" col-12 col-md-6 col-lg-6">
-                                                    <img src="public/img/logo.png"
-                                                        class="rounded-circle img-fluid img-border">
-                                                </section> <hr>
-                                            </div>
-
-                                            <div class="row ">
-                                                <section class="col-12 col-md-6 col-lg-6">
-                                                    <fieldset class="inscription d-flex flex-wrap p-1">
-                                                        <legend>M'inscrire</legend>
-                                                        <!---------------nom/prenom---------------->
-
-                                                        <p class="col-6">
-                                                            <input type="text" id="nom" placeholder="Nom" class="form-control" required>
-                                                        </p>
-                                                        <p class="col-6">
-                                                            <input type="text" id="prenom" placeholder="Prenom" class="form-control" required>
-                                                        </p>
-                                                        <!------------date de naissance-------------->
-                                                        <p class="col-12">
-                                                            <input type="email" id="email" class="form-control" placeholder="votre e-mail" required>
-                                                        </p>
-                                                        <p class="col-6">
-                                                            <input type="password" id="password" class="form-control" placeholder="password" required>
-                                                        </p>
-                                                        <p class="col-6">
-                                                            <input type="password" id="confirmPassword" class="form-control" placeholder="confirm password" required>
-                                                        </p>
-                                                        <button type="submit" class="btn btn-outline-success btn-block">M'inscrire</button>
-                                                    </fieldset>
+                                                <section class=" col-12">
+                                                    <img src="public/img/parent.jpg" class="img-thumbnail img-fluid">
                                                 </section>
-                                                <section class="col-12 col-md-6 col-lg-6">
-                                                    <fieldset class="p-3">
-                                                        <legend>Me connecter</legend>
-                                                        <p class="text-center">
-                                                            <input type="text" id="identifiant"
-                                                                placeholder=" identifiant" required>
-                                                        </p>
-                                                        <p class="text-center">
-                                                            <input type="password" id="mdp" placeholder="password" required>
-                                                        </p>
-                                                        <button type="submit" class="btn btn-outline-success btn-block" >Me connectez</button>
-                                                    </fieldset>
-                                                </section>
+                                                <hr>
                                             </div>
+                                            <section>
+                                                <fieldset class=" inscription form-group w-100 m-1 p-2">
+                                                    <legend class="text-center">M'inscrire</legend>
+                                                    <!---------------nom/prenom---------------->
+                                                    <div class="row">
+                                                        <p class="col-6">
+                                                            <input type="text" id="lname" placeholder="Nom"
+                                                                class="form-control" required>
+                                                        </p>
+                                                        <p class="col-6">
+                                                            <input type="text" id="fname" placeholder="Prenom"
+                                                                class="form-control" required>
+                                                        </p>
+                                                        <!------------adresse-------------->
+                                                        <p class="col-6">
+
+                                                            <input type="text" name="zipecode" class="form-control"
+                                                                placeholder="Code postal" id="zipcode">
+                                                            <div id="error-message"></div>
+                                                        </p>
+                                                        <p class="col-6">                                                            
+                                                            <select class="form-control" name="city" id="city">
+                                                                <option value="">Ville</option>
+                                                            </select>
+                                                        </p>
+                                                        <p class="col-6">
+                                                            <input type="text" name="adresse" class="form-control"
+                                                                placeholder="Adresse" id="adresse">
+                                                            <div id="wrapper"></div>
+                                                        </p>
+
+                                                        <p class="mail col-6">
+                                                            <input type="email" id="email" class="form-control"
+                                                                placeholder="votre e-mail" required>
+                                                        </p>
+
+                                                        <p class="col-6">
+                                                            <input type="password" id="password" class="form-control"
+                                                                placeholder="password" required>
+                                                        </p>
+                                                        <p class="col-6">
+                                                            <input type="password" id="confirmPassword"
+                                                                class="form-control" placeholder="confirm password"
+                                                                required>
+                                                        </p>
+                                                    </div>
+                                                    <!--<div id="error"></div>-->
+                                                    <button type="submit"
+                                                        class="col-12 btn btn-outline-success btn-block">
+                                                        M'inscrire</button>
+                                                </fieldset>
+
+                                                <fieldset class="m-1 p-3">
+                                                    <legend class="text-center">Me connecter</legend>
+                                                    <div class="row">
+                                                        <p class="col-6 text-center">
+                                                            <input type="text" id="identifiant" class="form-control"
+                                                                placeholder="Votre Identifiant">
+                                                        </p>
+                                                        <p class="col-6 text-center">
+                                                            <input type="password" id="mdp" class="form-control"
+                                                                placeholder="Votre Mot de passe">
+                                                        </p>
+                                                    </div>
+                                                    <button type="submit" class="btn btn-outline-success btn-block">Me
+                                                        connectez</button>
+                                                </fieldset>
+                                            </section>
+                                            <!---------------------------------------------------->
+
+
                                         </main>
 
                                         <!-- Modal footer -->
@@ -170,156 +199,140 @@
         </nav>
     </header>
 
-        <main class="container p-4">
-            <div class="row">
-                <section class="col-md-3 contact ">
-                    <div class="contact-info m-1">
-                        <img src="public/img/logo.png" alt="logo" class="img-fluid">
-                        <h2>Nous contactez</h2>
-                        <p>
+    <main class="container p-4">
+        <div class="row">
+            <section class="col-md-3 contact ">
+                <div class="contact-info m-1">
+                    <img src="public/img/logo.png" alt="logo" class="img-fluid">
+                    <h2>Nous contactez</h2>
+                    <p>
                         <h1 class="p-1">Jeux De Mômes</h1>
                         <br>20 Avenue Winston Churchill,
                         <br> 56000 VANNES<br>
-                        02.97.99.40.33</p>
+                        02.97.99.40.33
+                    </p>
+                </div>
+            </section>
+            <section class="col-md-9">
+
+                <div class="contact-form">
+                    <!--nom-->
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="fname">Nom:</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="fname" placeholder="Enter First Name"
+                                name="fname" required>
+                        </div>
                     </div>
-                </section>
-                <section class="col-md-9">
-                    
-                    <form class="contact-form">
-                        <!--nom-->
-                        <div class="form-group">
-                          <label class="control-label col-sm-2" for="fname">Nom:</label>
-                          <div class="col-sm-10">          
-                            <input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname" required>
-                          </div>
-                          <span id="noName"></span>
+                    <!--prenom-->
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="lname">Prenom:</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="lname" placeholder="Enter Last Name"
+                                name="lname" required>
                         </div>
-                        <!--prenom-->
-                        <div class="form-group">
-                          <label class="control-label col-sm-2" for="lname">Prenom:</label>
-                          <div class="col-sm-10">          
-                            <input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname" required>
-                          </div>
-                          <span id="missPrenom"></span>
+                    </div>
+                    <!--tel-->
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="tel">Télephone:</label>
+                        <div class="col-sm-10">
+                            <input type="tel" class="form-control" id="tel" placeholder="Enter tel" name="tel" required>
                         </div>
-                        <!--tel-->
-                        <div class="form-group">
-                            <label class="control-label col-sm-2" for="tel">Télephone:</label>
-                            <div class="col-sm-10">
-                              <input type="tel" class="form-control" id="tel" placeholder="Enter tel" name="tel" required>
-                            </div>
-                            <span id="noTel"></span>
-                          </div>
-                        <!--email-->
-                        <div class="form-group">
-                          <label class="control-label col-sm-2" for="email">Email:</label>
-                          <div class="col-sm-10">
-                            <input type="email" class="form-control" id="mail" placeholder="Enter email" name="email" required>
-                          </div>
-                          <span id="noMail"></span>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+                    </div>
+                    <!--email-->
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="email">Email:</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email"
+                                required>
                         </div>
-                        <!--objet-->
-                        <div class="form-group">
-                            <label class="control-label col-sm-2" for="comment">Objet:</label>
-                            <div class="col-sm-10">
-                              <input type="text" class="form-control" rows="1" id="comment"></input>
-                            </div>
-                          </div>
-                        <!--message-->
-                        <div class="form-group">
-                          <label class="control-label col-sm-2" for="comment">Message:</label>
-                          <div class="col-sm-10">
+                    </div>
+                    <!--message-->
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="comment">Message:</label>
+                        <div class="col-sm-10">
                             <textarea class="form-control" rows="5" id="comment"></textarea>
-                          </div>
                         </div>
-                        <!---btn validation-->
-                        <div class="form-group">        
-                          <div class="col-sm-offset-2 col-sm-10">
-                            <button type="submit" id="btnEnvoi" class="btn btn-outline-primary">Envoyez</button>
-                          </div>
+                    </div>
+                    <span id="feedback"></span>
+                    <!---btn validation-->
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button id="click" class="btn btn-outline-primary">Envoyez</button>
                         </div>
-                    </form>
-                </section>
-            </div>
-        </main>
-        <div id="map"></div>
-    <footer class="container-fluid bg-dark">
-
-        <!-----------------------------reseaux--------------------------------->
-        <div class="box shadow p-4 mb-4 border border-primary">
-            <div class="container">
-                <section class="row">
-                    <!-------------------fbook---------------------------------------->
-                    <article class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-
-                        <aside class="box-part text-center">
-
-                            <i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
-
-                            <div class="title">
-                                <h4>Facebook</h4>
-                            </div>
-
-                            <div class="text">
-                                <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr
-                                    scripta ocurreret qui ad.</span>
-                            </div>
-
-                            <a href="#">Learn More</a>
-
-                        </aside>
-                    </article>
-                    <!--------------------instagram-------------------------------------->
-                    <article class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-
-                        <aside class="box-part text-center">
-
-                            <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
-
-                            <div class="title">
-                                <h4>Instagram</h4>
-                            </div>
-
-                            <div class="text">
-                                <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr
-                                    scripta ocurreret qui ad.</span>
-                            </div>
-
-                            <a href="#">Learn More</a>
-
-                        </aside>
-                    </article>
-                    <!------------------------------pinterest--------------------------->
-                    <article class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-
-                        <aside class="box-part text-center">
-
-                            <i class="fa fa-pinterest-p fa-3x" aria-hidden="true"></i>
-
-                            <div class="title">
-                                <h4>Pinterest</h4>
-                            </div>
-
-                            <div class="text">
-                                <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr
-                                    scripta ocurreret qui ad.</span>
-                            </div>
-
-                            <a href="#">Learn More</a>
-
-                        </aside>
-                    </article>
-                </section>
-            </div>
+                    </div>
+                </div>
+            </section>
         </div>
-        <!-------------------------------pied de page------------------------------------->
+    </main>
+    <!-------------------------------------------footer-------------------------------------------------------------------------------->
+    <footer class="container-fluid bg-dark foot">
+        <!-----------------------------reseaux--------------------------------->
         <div class="container">
-            <section class="row footertop">
-                <article class="col-12 col-md-3 col-lg-3">
+            <aside class="row shadow p-4 mb-4 border border-primary">
+                <!-------------------fbook---------------------------------------->
+                <div class="box-part text-center col-lg-4 col-md-4 col-sm-4 col-xs-12 pb-3">
+
+                    <i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
+
+                    <div class="title">
+                        <h4>Facebook</h4>
+                    </div>
+
+                    <div class="text">
+                        <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr
+                            scripta ocurreret qui ad.</span>
+                    </div>
+
+                    <a href="#">Learn More</a>
+
+                </div>
+
+                <!--------------------instagram-------------------------------------->
+                <div class="box-part text-center col-lg-4 col-md-4 col-sm-4 col-xs-12 pb-3">
+
+                    <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
+
+                    <div class="title">
+                        <h4>Instagram</h4>
+                    </div>
+
+                    <div class="text">
+                        <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr
+                            scripta ocurreret qui ad.</span>
+                    </div>
+
+                    <a href="#">Learn More</a>
+
+                </div>
+
+                <!------------------------------pinterest--------------------------->
+                <div class="box-part text-center col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+                    <i class="fa fa-pinterest-p fa-3x" aria-hidden="true"></i>
+
+                    <div class="title">
+                        <h4>Pinterest</h4>
+                    </div>
+
+                    <div class="text">
+                        <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr
+                            scripta ocurreret qui ad.</span>
+                    </div>
+
+                    <a href="#">Learn More</a>
+
+                </div>
+
+            </aside>
+            <!-------------------------------pied de page------------------------------------->
+
+            <section class="row footertop text-center">
+                <adresse class="adres col-12 col-md-3 col-lg-3">
                     <h2>Jeux de Mômes</h2>
                     <p>20, Avenue Winstone churchill<br>56000 VANNES<br>tel: 02.97.55.99.33</p>
-                </article>
-                <div class=" col-12 col-md-3 col-lg-3">
+                </adresse>
+                <div class="map col-12 col-md-3 col-lg-3 ">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2687.9200117362298!2d-2.7750422852591687!3d47.64712119317253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48101c1e45bf9d89%3A0xf1b4ec0fcc4d768d!2s20%20Rue%20Winston%20Churchill%2C%2056000%20Vannes!5e0!3m2!1sfr!2sfr!4v1578149354549!5m2!1sfr!2sfr"
                         frameborder="0" style="border:0;" allowfullscreen="" class="img-fluid">
@@ -329,32 +342,41 @@
                 <ul class="col-12 col-md-3 col-lg-3 text-center ">
                     <li><a href="indexbts4.html">Accueil</a></li>
                     <li><a href="aproposbts4.html">A propos</a></li>
-                    <li><a href="contactbts4.html">Contact</a></li>
-                    <li><a href="boutiquebts4.html">Boutique</a></li>
+                    <li><a href="API'S_test\CP_geoAPI\CPGeoApi.js">APIcodePostal</a></li>
+                    <li><a href="API'S_test\API Adresse\geo-gouv_adressApi.html">APIadresse</a></li>
                 </ul>
 
-                <ul class="col-12 col-md-3 col-lg-3">
+                <ul class="col-12 col-md-3 col-lg-3 text-center">
                     <li><a href="page404.html">page 404</a></li>
                     <li><a href="mentions-legales.html">Mentions Légales</a></li>
                     <li><a href="politiquedeconfidentialite.html">Politique de Confidentialité</a></li>
                     <li><a href="plandusite.html">Plan du site</a></li>
                 </ul>
             </section>
-            <section class="row footerbottom justify-content-around">
-                <p>&copy;G.K 2019 tous droits réservés</p>
-            </section>
-        </div>
+            <p class="row footerbottom justify-content-around m-1">
+                <span>&copy;G.K 2019 tous droits réservés</span>
+            </p>
+
     </footer>
-   <!-- mes feuilles JS---->
-      <!-- <script src="API/maps.js"></script> -->
-      <script src="public/JS/boutontopbts4.js"></script>
-      <script src="public/JS/contact.js"></script>
-  
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-     
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <!-- mes feuilles JS---->
+    <script src="public/JS/jq.js"></script>
+    <script src="public/JS/creds.js"></script>
+    <script src="public/JS/boutontopbts4.js"></script>
+    <script src="public/JS/contactbts4.js"></script>
+    <script src="public/JS/slackcontactAPI.js"></script>
+    <script src="public/JS/codePostalAPI.js"></script>
+    <!-- <script src="public/JS/adressegeoapi.js"></script> -->
+   
 </body>
 
 </html>
