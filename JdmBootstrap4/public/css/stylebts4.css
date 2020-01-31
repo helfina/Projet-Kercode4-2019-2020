@@ -96,7 +96,7 @@ a:hover {
 }
 
 .modal-body fieldset {
-    border: 2px solid rgb(101, 6, 253);
+    border: none;
     padding: 15%; 
     margin: 30%;
 }
