@@ -26,390 +26,399 @@
 </head>
 
 <body class="container-fluid m-0 p-0">
-        
-                <header>
-                        <!--petit bouton pour remonter en haut de la page-->
-                        <button onclick="topFunction()" id="monBtn" title="allez en haut"><i
-                                        class="fa fa-angle-double-up"></i></button>
-                        <!--navbar-expand-sm=permet de l'aficher quand il diminue-->
-                        <nav class="navbar navbar-expand-lg bg-dark">
-                                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                                        data-target="#collapsibleNavbar">
-                                        <span class="navbar-toggler-icon"><i class="fa fa-navicon"></i></span>
-                                </button>
-                                <!----------------------logo du site--------------------------------->
-                                <a class="nav-brand" href="indexbts4.html"><img src="public/img/logo.png"
-                                                class="logo"></a>
-                                <!-----------------------------------mon menu---------------------------------------------------------->
-                                <section class="collapse navbar-collapse" id="collapsibleNavbar">
-                                        <div class="container row justify-content-around">
-                                                <ul class="navbar-nav">
-                                                        <li class="nav-item mr-3">
-                                                                <button type="button" class="btn btn-dark">
-                                                                        <a href="indexbts4.html">
-                                                                                <i class="fa fa-fw fa-home"></i>
-                                                                                Accueil
-                                                                        </a>
-                                                                </button>
-                                                        </li>
-                                                        <li class="nav-item mr-3">
-                                                                <button type="button" class="btn btn-dark">
-                                                                        <a href="#">
-                                                                                <i class="fa fa-pencil-square-o"></i>
-                                                                                Blog
-                                                                        </a>
-                                                                </button>
-                                                        </li>
-                                                        <li class="nav-item mr-3">
-                                                                <button type="button" class="btn btn-dark">
-                                                                        <a class="active" href="#">
-                                                                                <i
-                                                                                        class="fa fa-cart-arrow-down active"></i>
-                                                                                Boutique
-                                                                        </a>
-                                                                </button>
-                                                        </li>
-                                                        <li class="nav-item mr-3">
-                                                                <button type="button" class="btn btn-dark">
-                                                                        <a href="#">
-                                                                                <i class="fa fa-vcard-o"></i>
-                                                                                A Propos
-                                                                        </a>
-                                                                </button>
-                                                        </li>
-                                                        <li class="nav-item mr-3">
-                                                                <button type="button" class="btn btn-dark">
-                                                                        <a href="contactbts4.html">
-                                                                                <i class="fa fa-fw fa-envelope"></i>
-                                                                                Contact
-                                                                        </a>
-                                                                </button>
-                                                        </li>
-                                                        <li class="nav-item">
-                                                                <!-- Button to Open the Modal -->
-                                                                <button type="button" class="btn btn-dark"
-                                                                        data-toggle="modal" data-target="#myModal">
-                                                                        <a href="#"><i class="fa fa-fw fa-user"></i> Mon
-                                                                                Compte</a>
-                                                                </button>
-                                                                <!-- The Modal -->
-                                                                <section class="modal" id="myModal">
-                                                                        <div class="modal-dialog modal-lg">
-                                                                                <div class="modal-content">
-                                                                                        <!-- Modal Header -->
-                                                                                        <header
-                                                                                                class="modal-header bg-primary">
-                                                                                                <h4 class="modal-title">
-                                                                                                        Espace Privé
-                                                                                                </h4>
-                                                                                                <button type="button"
-                                                                                                        class="close"
-                                                                                                        data-dismiss="modal">&times;</button>
-                                                                                        </header>
 
-                                                                                        <!-- Modal body -->
-                                                                                        <main
-                                                                                                class=" container modal-body">
-                                                                                                <div class="row">
-                                                                                                        <section
-                                                                                                                class=" col-12">
-                                                                                                                <img src="public/img/parent.jpg"
-                                                                                                                        class="img-thumbnail img-fluid">
-                                                                                                        </section>
-                                                                                                        <hr>
-                                                                                                </div>
-                                                                                                <section>
-                                                                                                        <fieldset
-                                                                                                                class=" inscription form-group w-100 m-1 p-2">
-                                                                                                                <legend
-                                                                                                                        class="text-center">
-                                                                                                                        M'inscrire
-                                                                                                                </legend>
-                                                                                                                <!---------------nom/prenom---------------->
-                                                                                                                <div
-                                                                                                                        class="row">
-                                                                                                                        <p
-                                                                                                                                class="col-6">
-                                                                                                                                <input type="text"
-                                                                                                                                        id="lname"
-                                                                                                                                        placeholder="Nom"
-                                                                                                                                        class="form-control"
-                                                                                                                                        required>
-                                                                                                                        </p>
-                                                                                                                        <p
-                                                                                                                                class="col-6">
-                                                                                                                                <input type="text"
-                                                                                                                                        id="fname"
-                                                                                                                                        placeholder="Prenom"
-                                                                                                                                        class="form-control"
-                                                                                                                                        required>
-                                                                                                                        </p>
-                                                                                                                        <!------------adresse-------------->
-                                                                                                                        <p
-                                                                                                                                class="col-6">
+        <header>
+                <!--petit bouton pour remonter en haut de la page-->
+                <button onclick="topFunction()" id="monBtn" title="allez en haut"><i
+                                class="fa fa-angle-double-up"></i></button>
+                <!--navbar-expand-sm=permet de l'aficher quand il diminue-->
+                <nav class="navbar navbar-expand-lg bg-dark">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#collapsibleNavbar">
+                                <span class="navbar-toggler-icon"><i class="fa fa-navicon"></i></span>
+                        </button>
+                        <!----------------------logo du site--------------------------------->
+                        <a class="nav-brand" href="indexbts4.html"><img src="public/img/logo.png" class="logo"></a>
+                        <!-----------------------------------mon menu---------------------------------------------------------->
+                        <section class="collapse navbar-collapse" id="collapsibleNavbar">
+                                <div class="container row justify-content-around">
+                                        <ul class="navbar-nav">
+                                                <li class="nav-item mr-3">
+                                                        <button type="button" class="btn btn-dark">
+                                                                <a href="indexbts4.html">
+                                                                        <i class="fa fa-fw fa-home"></i>
+                                                                        Accueil
+                                                                </a>
+                                                        </button>
+                                                </li>
+                                                <li class="nav-item mr-3">
+                                                        <button type="button" class="btn btn-dark">
+                                                                <a href="#">
+                                                                        <i class="fa fa-pencil-square-o"></i>
+                                                                        Blog
+                                                                </a>
+                                                        </button>
+                                                </li>
+                                                <li class="nav-item mr-3">
+                                                        <button type="button" class="btn btn-dark">
+                                                                <a class="active" href="#">
+                                                                        <i class="fa fa-cart-arrow-down active"></i>
+                                                                        Boutique
+                                                                </a>
+                                                        </button>
+                                                </li>
+                                                <li class="nav-item mr-3">
+                                                        <button type="button" class="btn btn-dark">
+                                                                <a href="#">
+                                                                        <i class="fa fa-vcard-o"></i>
+                                                                        A Propos
+                                                                </a>
+                                                        </button>
+                                                </li>
+                                                <li class="nav-item mr-3">
+                                                        <button type="button" class="btn btn-dark">
+                                                                <a href="contactbts4.html">
+                                                                        <i class="fa fa-fw fa-envelope"></i>
+                                                                        Contact
+                                                                </a>
+                                                        </button>
+                                                </li>
+                                                <li class="nav-item">
+                                                        <!-- Button to Open the Modal -->
+                                                        <button type="button" class="btn btn-dark" data-toggle="modal"
+                                                                data-target="#myModal">
+                                                                <a href="#"><i class="fa fa-fw fa-user"></i> Mon
+                                                                        Compte</a>
+                                                        </button>
+                                                        <!-- The Modal -->
+                                                        <section class="modal" id="myModal">
+                                                                <div class="modal-dialog modal-lg">
+                                                                        <div class="modal-content">
+                                                                                <!-- Modal Header -->
+                                                                                <header class="modal-header bg-primary">
+                                                                                        <h4 class="modal-title">
+                                                                                                Espace Privé
+                                                                                        </h4>
+                                                                                        <button type="button"
+                                                                                                class="close"
+                                                                                                data-dismiss="modal">&times;</button>
+                                                                                </header>
 
-                                                                                                                                <input type="text"
-                                                                                                                                        name="zipecode"
-                                                                                                                                        class="form-control"
-                                                                                                                                        placeholder="Code postal"
-                                                                                                                                        id="zipcode">
-                                                                                                                                <div
-                                                                                                                                        id="error-message">
-                                                                                                                                </div>
-                                                                                                                        </p>
-                                                                                                                        <p
-                                                                                                                                class="col-6">
-                                                                                                                                <select class="form-control"
-                                                                                                                                        name="city"
-                                                                                                                                        id="city">
-                                                                                                                                        <option
-                                                                                                                                                value="">
-                                                                                                                                                Selectionnez une Ville
-                                                                                                                                        </option>
-                                                                                                                                </select>
-                                                                                                                        </p>
-                                                                                                                        <p
-                                                                                                                                class="col-6">
-                                                                                                                                <input type="text" name="adresse" class="form-control"
-                                                                                                                                placeholder="Adresse" id="adresse">
-                                                                                                                                <div id="wrapper">
-                                                                                                                                </div>
-                                                                                                                        </p>
-
-                                                                                                                        <p
-                                                                                                                                class="mail col-6">
-                                                                                                                                <input type="email"
-                                                                                                                                        id="email"
-                                                                                                                                        class="form-control"
-                                                                                                                                        placeholder="votre e-mail"
-                                                                                                                                        required>
-                                                                                                                        </p>
-
-                                                                                                                        <p
-                                                                                                                                class="col-6">
-                                                                                                                                <input type="password"
-                                                                                                                                        id="password"
-                                                                                                                                        class="form-control"
-                                                                                                                                        placeholder="password"
-                                                                                                                                        required>
-                                                                                                                        </p>
-                                                                                                                        <p
-                                                                                                                                class="col-6">
-                                                                                                                                <input type="password"
-                                                                                                                                        id="confirmPassword"
-                                                                                                                                        class="form-control"
-                                                                                                                                        placeholder="confirm password"
-                                                                                                                                        required>
-                                                                                                                        </p>
-                                                                                                                </div>
-                                                                                                                <div
-                                                                                                                        id="feedback">
-                                                                                                                </div>
-                                                                                                                <button type="submit"
-                                                                                                                        class="col-12 btn btn-outline-success btn-block">
-                                                                                                                        M'inscrire</button>
-                                                                                                        </fieldset>
-
-                                                                                                        <fieldset
-                                                                                                                class="m-1 p-3">
-                                                                                                                <legend
-                                                                                                                        class="text-center">
-                                                                                                                        Me
-                                                                                                                        connecter
-                                                                                                                </legend>
-                                                                                                                <div
-                                                                                                                        class="row">
-                                                                                                                        <p
-                                                                                                                                class="col-6 text-center">
-                                                                                                                                <input type="text"
-                                                                                                                                        id="identifiant"
-                                                                                                                                        class="form-control"
-                                                                                                                                        placeholder="Votre Identifiant">
-                                                                                                                        </p>
-                                                                                                                        <p
-                                                                                                                                class="col-6 text-center">
-                                                                                                                                <input type="password"
-                                                                                                                                        id="mdp"
-                                                                                                                                        class="form-control"
-                                                                                                                                        placeholder="Votre Mot de passe">
-                                                                                                                        </p>
-                                                                                                                </div>
-                                                                                                                <button type="submit"
-                                                                                                                        class="btn btn-outline-success btn-block">Me
-                                                                                                                        connectez</button>
-                                                                                                        </fieldset>
+                                                                                <!-- Modal body -->
+                                                                                <main class=" container modal-body">
+                                                                                        <div class="row">
+                                                                                                <section
+                                                                                                        class=" col-12">
+                                                                                                        <img src="public/img/parent.jpg"
+                                                                                                                class="img-thumbnail img-fluid">
                                                                                                 </section>
-                                                                                                <!---------------------------------------------------->
+                                                                                                <hr>
+                                                                                        </div>
+                                                                                        <section>
+                                                                                                <fieldset
+                                                                                                        class=" inscription form-group w-100 m-1 p-2">
+                                                                                                        <legend
+                                                                                                                class="text-center">
+                                                                                                                M'inscrire
+                                                                                                        </legend>
+                                                                                                        <!---------------nom/prenom---------------->
+                                                                                                        <div
+                                                                                                                class="row">
+                                                                                                                <p
+                                                                                                                        class="col-6">
+                                                                                                                        <input type="text"
+                                                                                                                                id="lname"
+                                                                                                                                placeholder="Nom"
+                                                                                                                                class="form-control"
+                                                                                                                                required>
+                                                                                                                </p>
+                                                                                                                <p
+                                                                                                                        class="col-6">
+                                                                                                                        <input type="text"
+                                                                                                                                id="fname"
+                                                                                                                                placeholder="Prenom"
+                                                                                                                                class="form-control"
+                                                                                                                                required>
+                                                                                                                </p>
+                                                                                                                <!------------adresse-------------->
+                                                                                                                <p
+                                                                                                                        class="col-6">
+
+                                                                                                                        <input type="text"
+                                                                                                                                name="zipecode"
+                                                                                                                                class="form-control"
+                                                                                                                                placeholder="Code postal"
+                                                                                                                                id="zipcode">
+                                                                                                                        <div
+                                                                                                                                id="error-message">
+                                                                                                                        </div>
+                                                                                                                </p>
+                                                                                                                <p
+                                                                                                                        class="col-6">
+                                                                                                                        <select class="form-control"
+                                                                                                                                name="city"
+                                                                                                                                id="city">
+                                                                                                                                <option
+                                                                                                                                        value="">
+                                                                                                                                        Selectionnez
+                                                                                                                                        une
+                                                                                                                                        Ville
+                                                                                                                                </option>
+                                                                                                                        </select>
+                                                                                                                </p>
+                                                                                                                <p
+                                                                                                                        class="col-6">
+                                                                                                                        <input type="text"
+                                                                                                                                name="adresse"
+                                                                                                                                class="form-control"
+                                                                                                                                placeholder="Adresse"
+                                                                                                                                id="adresse">
+                                                                                                                        <div
+                                                                                                                                id="wrapper">
+                                                                                                                        </div>
+                                                                                                                </p>
+
+                                                                                                                <p
+                                                                                                                        class="mail col-6">
+                                                                                                                        <input type="email"
+                                                                                                                                id="email"
+                                                                                                                                class="form-control"
+                                                                                                                                placeholder="votre e-mail"
+                                                                                                                                required>
+                                                                                                                </p>
+
+                                                                                                                <p
+                                                                                                                        class="col-6">
+                                                                                                                        <input type="password"
+                                                                                                                                id="password"
+                                                                                                                                class="form-control"
+                                                                                                                                placeholder="password"
+                                                                                                                                required>
+                                                                                                                </p>
+                                                                                                                <p
+                                                                                                                        class="col-6">
+                                                                                                                        <input type="password"
+                                                                                                                                id="confirmPassword"
+                                                                                                                                class="form-control"
+                                                                                                                                placeholder="confirm password"
+                                                                                                                                required>
+                                                                                                                </p>
+                                                                                                        </div>
+                                                                                                        <div
+                                                                                                                id="feedback">
+                                                                                                        </div>
+                                                                                                        <button type="submit"
+                                                                                                                class="col-12 btn btn-outline-success btn-block">
+                                                                                                                M'inscrire</button>
+                                                                                                </fieldset>
+
+                                                                                                <fieldset
+                                                                                                        class="m-1 p-3">
+                                                                                                        <legend
+                                                                                                                class="text-center">
+                                                                                                                Me
+                                                                                                                connecter
+                                                                                                        </legend>
+                                                                                                        <div
+                                                                                                                class="row">
+                                                                                                                <p
+                                                                                                                        class="col-6 text-center">
+                                                                                                                        <input type="text"
+                                                                                                                                id="identifiant"
+                                                                                                                                class="form-control"
+                                                                                                                                placeholder="Votre Identifiant">
+                                                                                                                </p>
+                                                                                                                <p
+                                                                                                                        class="col-6 text-center">
+                                                                                                                        <input type="password"
+                                                                                                                                id="mdp"
+                                                                                                                                class="form-control"
+                                                                                                                                placeholder="Votre Mot de passe">
+                                                                                                                </p>
+                                                                                                        </div>
+                                                                                                        <button type="submit"
+                                                                                                                class="btn btn-outline-success btn-block">Me
+                                                                                                                connectez</button>
+                                                                                                </fieldset>
+                                                                                        </section>
+                                                                                        <!---------------------------------------------------->
 
 
-                                                                                        </main>
+                                                                                </main>
 
-                                                                                        <!-- Modal footer -->
-                                                                                        <footer
-                                                                                                class="modal-footer bg-primary">
-                                                                                                <button type="button"
-                                                                                                        class="btn btn-danger"
-                                                                                                        data-dismiss="modal">Fermer</button>
-                                                                                        </footer>
+                                                                                <!-- Modal footer -->
+                                                                                <footer class="modal-footer bg-primary">
+                                                                                        <button type="button"
+                                                                                                class="btn btn-danger"
+                                                                                                data-dismiss="modal">Fermer</button>
+                                                                                </footer>
 
-                                                                                </div>
                                                                         </div>
-                                                                </section>
-                                                        </li>
-                                                </ul>
-                                                <!--bloc de recherche/ search bar-->
-                                                <form class="form-inline" action="/action_page.php">
-                                                        <div class="input-group">
-                                                                <div class="input-group-prepend">
-                                                                        <span class="input-group-text"><i
-                                                                                        class="fa fa-fw fa-search"></i></span>
                                                                 </div>
-                                                                <input type="text" class="form-control"
-                                                                        placeholder="search">
+                                                        </section>
+                                                </li>
+                                        </ul>
+                                        <!--bloc de recherche/ search bar-->
+                                        <form class="form-inline" action="/action_page.php">
+                                                <div class="input-group">
+                                                        <div class="input-group-prepend">
+                                                                <span class="input-group-text"><i
+                                                                                class="fa fa-fw fa-search"></i></span>
                                                         </div>
-                                                </form>
-                                        </div>
-                                </section>
-                        </nav>
-                        <!-----------------------------mon slider----------------------------------------------------->
-                        <!-----------------slider fait maison -------------------->
-                        <section id="slider">
-                                <img id="slide" src="public/img/inclusion.jpg" alt="inclusion" class="img-fluid">
-                                <div id="precedent" onclick="ChangeSlide(-1)">
-                                        < </div> <div id="suivant" onclick="ChangeSlide(1)"> >
+                                                        <input type="text" class="form-control" placeholder="search">
+                                                </div>
+                                        </form>
                                 </div>
                         </section>
-                        <!--------------------------------------------mega menu category hover---------------------------------------------------->
+                </nav>
+                <!-----------------------------mon slider----------------------------------------------------->
+                <!-----------------slider fait maison -------------------->
+                <section id="slider">
+                        <img id="slide" src="public/img/inclusion.jpg" alt="inclusion" class="img-fluid">
+                        <div id="precedent" onclick="ChangeSlide(-1)">
+                                < </div> <div id="suivant" onclick="ChangeSlide(1)"> >
+                        </div>
+                </section>
+                <!--------------------------------------------mega menu category hover---------------------------------------------------->
 
-                </header>
+        </header>
 
-                <main class="container-fluid">
-                        <!---------------------------fil d'ariane-------------------------->
-                        <ul class="list-inline">
-                                <li class="list-inline-item mr-2">
-                                        <a class="u-link-v5 g-color-main" href="indexbts4.html"><i
-                                                        class="fa fa-home mr-1"></i>Acceuil</a>
-                                        <i class="fa fa-angle-right g-ml-7"></i>
-                                </li>
-                                <li class="list-inline-item mr-2">
-                                        <a class="u-link-v5 g-color-main" href="#">Blog</a>
-                                        <i class="fa fa-angle-right g-ml-7"></i>
-                                </li>
-                                <li class="list-inline-item g-color-primary">
-                                        <span>Boutique</span>
-                                </li>
-                        </ul>
-                        <!------------------------------------------------------------------------------------------------------------------------------------------>
-                        <div class="vignette row justify-content-between">
-                                <div class="card text-white col-12 col-sm-5 col-md-4 col-lg-3">
-                                        <img class="card-img" src="public/img/boutique/sitting-ball-filet-bleu.jpg" alt="Card image">
-                                        <div class="card-img-overlay">
-                                                <h5 class="card-title">Besoins spécifiques</h5>
-                                                <p class="card-text">Voici une sélection d'outils ludiques, éducatifs et
-                                                        pratiques répondant aux besoins spécifiques.</p>
-                                                <a href="#" class="card-text">Last updated 3 mins ago</a>
-                                        </div>
-                                </div>
-                                <!--------------------------------------------------->
-                                <div class="card text-white col-12 col-sm-5 col-md-4 col-lg-3">
-                                        <img class="card-img" src="public/img/boutique/colonne-a-bulles-175-m-adaptee-.jpg" alt="Card image">
-                                        <div class="card-img-overlay">
-                                                <h5 class="card-title">Espaces Multisensoriels</h5>
-                                                <p class="card-text">Imaginez un espace dédié au bien être dans lequel
-                                                        les sens sont sollicités...
-                                                        </p>
-                                                <a href="#" class="card-text">Last updated 3 mins ago</a>
-                                        </div>
-                                </div>
-                                <!--------------------------------------------------->
-                                <div class="card text-white col-12 col-sm-5 col-md-4 col-lg-3">
-                                        <img class="card-img" src="public/img/boutique/chaussette-manchon-ellie.jpg" alt="Card image">
-                                        <div class="card-img-overlay">
-                                                <h5 class="card-title">Sensorialité</h5>
-                                                <p class="card-text">C'est par nos sens que nous percevons le monde !
+        <main class="container-fluid">
+                <!---------------------------fil d'ariane-------------------------->
+                <ul class="list-inline">
+                        <li class="list-inline-item mr-2">
+                                <a class="u-link-v5 g-color-main" href="indexbts4.html"><i
+                                                class="fa fa-home mr-1"></i>Acceuil</a>
+                                <i class="fa fa-angle-right g-ml-7"></i>
+                        </li>
+                        <li class="list-inline-item mr-2">
+                                <a class="u-link-v5 g-color-main" href="#">Blog</a>
+                                <i class="fa fa-angle-right g-ml-7"></i>
+                        </li>
+                        <li class="list-inline-item g-color-primary">
+                                <span>Boutique</span>
+                        </li>
+                </ul>
+                <!------------------------------------------------------------------------------------------------------------------------------------------>
+                <div class="vignette row justify-content-around">
+                        <figure class="card text-white col-12  col-md-5 col-lg-3">
+                                <img class="card-img" src="public/img/boutique/sitting-ball-filet-bleu.jpg"
+                                        alt="Card image">
+                                <figcaption class="card-img-overlay">
+                                        <h5 class="card-title">Besoins spécifiques</h5>
+                                        <p class="card-text">Voici une sélection d'outils ludiques, éducatifs et
+                                                pratiques...
+                                        </p>
+                                        <button class="btn btn-sm btn-primary"><a href="#">Voir plus...</a></button>
+                                </figcaption>
+                        </figure>
+                        <!--------------------------------------------------->
+                        <figure class="card text-white col-12 col-md-5 col-lg-3">
+                                <img class="card-img" src="public/img/boutique/colonne-a-bulles-175-m-adaptee-.jpg"
+                                        alt="Card image">
+                                <figcaption class="card-img-overlay">
+                                        <h5 class="card-title">Espaces Multisensoriels</h5>
+                                        <p class="card-text">Imaginez un espace dédié au bien être dans lequel
+                                                les sens sont sollicités...
+                                        </p>
+                                        <button class="btn btn-sm btn-primary"><a href="#">Voir plus...</a></button>
+                                </figcaption>
+                        </figure>
+                        <!--------------------------------------------------->
+                        <figure class="card text-white col-12 col-md-5 col-lg-3">
+                                <img class="card-img" src="public/img/boutique/chaussette-manchon-ellie.jpg"
+                                        alt="Card image">
+                                <figcaption class="card-img-overlay">
+                                        <h5 class="card-title">Sensorialité</h5>
+                                        <p class="card-text">C'est par nos sens que nous percevons le monde !
                                                 Les enfants doivent apprendre à organiser...
-                                                 </p>
-                                                <a href="#" class="card-text">Last updated 3 mins ago</a>
-                                        </div>
-                                </div>
-                                <!--------------------------------------------------->
-                                <div class="card text-white col-12 col-sm-5 col-md-4 col-lg-3">
-                                        <img class="card-img" src="public/img/boutique/sit-n-gym.jpg" alt="Card image">
-                                        <div class="card-img-overlay">
-                                                <h5 class="card-title">Motricité</h5>
-                                                <p class="card-text">Nous vous proposons du matériel vivant et modulable
+                                        </p>
+                                        <button class="btn btn-sm btn-primary"><a href="#">Voir plus...</a></button>
+                                </figcaption>
+                        </figure>
+                        <!--------------------------------------------------->
+                        <figure class="card text-white col-12 col-md-5 col-lg-3">
+                                <img class="card-img" src="public/img/boutique/sit-n-gym.jpg" alt="Card image">
+                                <figcaption class="card-img-overlay">
+                                        <h5 class="card-title">Motricité</h5>
+                                        <p class="card-text">Nous vous proposons du matériel vivant et modulable
                                                 pour apprendre à utiliser son corps...
-                                                </p>
-                                                <a href="#" class="card-text">Last updated 3 mins ago</a>
-                                        </div>
-                                </div>
-                                <!--------------------------------------------------->
-                                <div class="card text-white col-12 col-sm-5 col-md-4 col-lg-3">
-                                        <img class="card-img" src="public/img/boutique/les-collines.jpg" alt="Card image">
-                                        <div class="card-img-overlay">
-                                                <h5 class="card-title">Language et Communication</h5>
-                                                <p class="card-text">This is a wider card with supporting text below as
-                                                        a natural lead-in to additional content. </p>
-                                                <a href="#" class="card-text">Last updated 3 mins ago</a>
-                                        </div>
-                                </div>
-                                <!--------------------------------------------------->
-                                <div class="card text-white col-12 col-sm-5 col-md-4 col-lg-3">
-                                        <img class="card-img" src="public/img/boutique/kit-activite-mathlink.jpg" alt="Card image">
-                                        <div class="card-img-overlay">
-                                                <h5 class="card-title">Apprentissage</h5>
-                                                <p class="card-text">This is a wider card with supporting text below as
-                                                        a natural lead-in to additional content. This content is a
-                                                        little bit longer.</p>
-                                                <a href="#" class="card-text">Last updated 3 mins ago</a>
-                                        </div>
-                                </div>
-                                <!--------------------------------------------------->
-                                <div class="card text-white col-12 col-sm-5 col-md-4 col-lg-3">
-                                        <img class="card-img" src="public/img/boutique/improsocial.jpg" alt="Card image">
-                                        <div class="card-img-overlay">
-                                                <h5 class="card-title">Compétences Sociales</h5>
-                                                <p class="card-text">This is a wider card with supporting text below as
-                                                        a natural lead-in to additional content.</p>
-                                                <a href="#" class="card-text">Last updated 3 mins ago</a>
-                                        </div>
-                                </div>
-                                <!--------------------------------------------------->
-                                <div class="card text-white col-12 col-sm-5 col-md-4 col-lg-3">
-                                        <img class="card-img" src="public/img/boutique/pates-de-modelage-reeducatif.jpg" alt="Card image">
-                                        <div class="card-img-overlay">
-                                                <h5 class="card-title">Créativités</h5>
-                                                <p class="card-text">This is a wider card with supporting text below as
-                                                        a natural lead-in to additional content. This content is a
-                                                        little bit longer.</p>
-                                                <a class="card-text">Last updated 3 mins ago</a>
-                                        </div>
-                                </div>
-                                <!--------------------------------------------------->
-                                <div class="card text-white col-12 col-sm-5 col-md-4 col-lg-3">
-                                        <img class="card-img" src="public/img/boutique/les-collines.jpg" alt="Card image">
-                                        <div class="card-img-overlay">
-                                                <h5 class="card-title">Autonomie</h5>
-                                                <p class="card-text">This is a wider card with supporting text below as
-                                                        a natural lead-in to additional content. This content is a
-                                                        little bit longer.</p>
-                                                <a href="#" class="card-text">Last updated 3 mins ago</a href="#">
-                                        </div>
-                                </div>
-                                <!----------------------------------------------
-                                <div class="card text-white col-12 col-sm-5 col-md-4 col-lg-3">
-                                        <img class="card-img" src="public/img/boutique/un-genre-de-famille.jpg" alt="Card image">
-                                        <div class="card-img-overlay">
-                                                <h5 class="card-title">Inclusion</h5>
-                                                <p class="card-text">This is a wider card with supporting text below as
-                                                        a natural lead-in to additional content. This content is a
-                                                        little bit longer.</p>
-                                                <a href="#" class="card-text">Last updated 3 mins ago</a href="#">
-                                        </div>
-                                </div>----->
-                                <!------------------------------------------------------------------------------------------------------------------------------------------>
+                                        </p>
+                                        <button class="btn btn-sm btn-primary"><a href="#">Voir plus...</a></button>
+                                </figcaption>
+                        </figure>
+                        <!--------------------------------------------------->
+                        <figure class="card text-white col-12 col-md-5 col-lg-3">
+                                <img class="card-img" src="public/img/boutique/les-collines.jpg" alt="Card image">
+                                <figcaption class="card-img-overlay">
+                                        <h5 class="card-title">Language et Communication</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as
+                                                a natural...
+                                        </p>
+                                        <button class="btn btn-sm btn-primary"><a href="#">Voir plus...</a></button>
+                                </figcaption>
+                        </figure>
+                        <!--------------------------------------------------->
+                        <figure class="card text-white col-12 col-md-5 col-lg-3">
+                                <img class="card-img" src="public/img/boutique/kit-activite-mathlink.jpg"
+                                        alt="Card image">
+                                <figcaption class="card-img-overlay">
+                                        <h5 class="card-title">Apprentissage</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as
+                                                a natural...
+                                        </p>
+                                        <button class="btn btn-sm btn-primary"><a href="#">Voir plus...</a></button>
+                                </figcaption>
+                        </figure>
+                        <!--------------------------------------------------->
+                        <figure class="card text-white col-12 col-md-5 col-lg-3">
+                                <img class="card-img" src="public/img/boutique/improsocial.jpg" alt="Card image">
+                                <figcaption class="card-img-overlay">
+                                        <h5 class="card-title">Compétences Sociales</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as
+                                                a natural...
+                                        </p>
+                                        <button class="btn btn-sm btn-primary"><a href="#">Voir plus...</a></button>
+                                </figcaption>
+                        </figure>
+                        <!--------------------------------------------------->
+                        <figure class="card text-white col-12 col-md-5 col-lg-3">
+                                <img class="card-img" src="public/img/boutique/pates-de-modelage-reeducatif.jpg"
+                                        alt="Card image">
+                                <figcaption class="card-img-overlay">
+                                        <h5 class="card-title">Créativités</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as
+                                                a natural lead-in to additional content...
+                                        </p>
+                                        <button class="btn btn-sm  btn-primary"><a href="#">Voir plus...</a></button>
+                                </figcaption>
+                        </figure>
+                        <!--------------------------------------------------->
+                        <figure id="autonomie" class="card text-white col-12 col-md-5 col-lg-3">
+                                <img class="card-img" src="public/img/boutique/les-collines.jpg" alt="Card image">
+                                <figcaption class="card-img-overlay">
+                                        <h5 class="card-title">Autonomie</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as
+                                                a natural lead-in to additional content...
+                                        </p>
+                                        <button class="btn btn-sm btn-primary"><a href="#">Voir plus...</a></button>
+                                </figcaption>
+                        </figure>
+                        <!-------------------------------------------->
+                        <figure id="inclusion" class="card text-white col-12 col-md-5 col-lg-3">
+                                <img class="card-img" src="public/img/boutique/un-genre-de-famille.jpg"
+                                        alt="Card image">
+                                <figcaption class="card-img-overlay">
+                                        <h5 class="card-title">Inclusion</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as
+                                                a natural lead-in to additional content...
+                                        </p>
+                                        <button class="btn btn-sm  btn-primary"><a href="#">Voir plus...</a></button>
+                                </figcaption>
+                        </figure>
+                        <!------------------------------------------------------------------------------------------------------------------------------------------>
 
-                                <!-------------------------------bloc 1-------------------------
+                        <!-------------------------------bloc 1-------------------------
                                 <div class="row bloc1">
                                         <section class="col-xs-12 col-md-12 col-lg-12 d-flex p-1 pb-3 m-1 equilibre">
                                                 <figure class="col-xs-6 col-md-6 col-lg-6 pt-3">
@@ -445,123 +454,131 @@
                                 <img src="public/img/V_plateaux-montessori_2.jpg" alt="#" class="montessori img-fluid mb-3 mt-2">------------>
 
 
-                </main>
+        </main>
 
-                <!-------------------------------------------footer-------------------------------------------------------------------------------->
-                <footer class="container-fluid bg-dark foot">
-                        <!-----------------------------reseaux--------------------------------->
-                        <div class="container">
-                                <aside class="row shadow p-4 mb-4 border border-primary">
-                                        <!-------------------fbook---------------------------------------->
-                                        <div class="box-part text-center col-lg-4 col-md-4 col-sm-4 col-xs-12 pb-3">
+        <!-------------------------------------------footer-------------------------------------------------------------------------------->
+        <footer class="container-fluid bg-dark foot">
+                <!-----------------------------reseaux--------------------------------->
+                <div class="container">
+                        <aside class="row shadow p-4 mb-4 border border-primary">
+                                <!-------------------fbook---------------------------------------->
+                                <div class="box-part text-center col-lg-4 col-md-4 col-sm-4 col-xs-12 pb-3">
 
-                                                <i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
+                                        <i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
 
-                                                <div class="title">
-                                                        <h4>Facebook</h4>
-                                                </div>
-
-                                                <div class="text">
-                                                        <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam.
-                                                                Assum decore te sed. Elitr
-                                                                scripta ocurreret qui ad.</span>
-                                                </div>
-
-                                                <a href="#">Learn More</a>
-
+                                        <div class="title">
+                                                <h4>Facebook</h4>
                                         </div>
 
-                                        <!--------------------instagram-------------------------------------->
-                                        <div class="box-part text-center col-lg-4 col-md-4 col-sm-4 col-xs-12 pb-3">
-
-                                                <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
-
-                                                <div class="title">
-                                                        <h4>Instagram</h4>
-                                                </div>
-
-                                                <div class="text">
-                                                        <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam.
-                                                                Assum decore te sed. Elitr
-                                                                scripta ocurreret qui ad.</span>
-                                                </div>
-
-                                                <a href="#">Learn More</a>
-
+                                        <div class="text">
+                                                <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam.
+                                                        Assum decore te sed. Elitr
+                                                        scripta ocurreret qui ad.</span>
                                         </div>
 
-                                        <!------------------------------pinterest--------------------------->
-                                        <div class="box-part text-center col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                        <a href="#">Learn More</a>
 
-                                                <i class="fa fa-pinterest-p fa-3x" aria-hidden="true"></i>
+                                </div>
 
-                                                <div class="title">
-                                                        <h4>Pinterest</h4>
-                                                </div>
+                                <!--------------------instagram-------------------------------------->
+                                <div class="box-part text-center col-lg-4 col-md-4 col-sm-4 col-xs-12 pb-3">
 
-                                                <div class="text">
-                                                        <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam.
-                                                                Assum decore te sed. Elitr
-                                                                scripta ocurreret qui ad.</span>
-                                                </div>
+                                        <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
 
-                                                <a href="#">Learn More</a>
-
+                                        <div class="title">
+                                                <h4>Instagram</h4>
                                         </div>
 
-                                </aside>
-                                <!-------------------------------pied de page------------------------------------->
-
-                                <section class="row footertop text-center">
-                                        <adresse class="adres col-12 col-md-3 col-lg-3">
-                                                <h2>Jeux de Mômes</h2>
-                                                <p>20, Avenue Winstone churchill<br>56000 VANNES<br>tel: 02.97.55.99.33
-                                                </p>
-                                        </adresse>
-                                        <div class="map col-12 col-md-3 col-lg-3 ">
-                                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2687.9200117362298!2d-2.7750422852591687!3d47.64712119317253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48101c1e45bf9d89%3A0xf1b4ec0fcc4d768d!2s20%20Rue%20Winston%20Churchill%2C%2056000%20Vannes!5e0!3m2!1sfr!2sfr!4v1578149354549!5m2!1sfr!2sfr"
-                                                        frameborder="0" style="border:0;" allowfullscreen=""
-                                                        class="img-fluid">
-                                                </iframe>
+                                        <div class="text">
+                                                <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam.
+                                                        Assum decore te sed. Elitr
+                                                        scripta ocurreret qui ad.</span>
                                         </div>
-                                        <!------------------------------------liens ------------------------------------------------------------------------->
-                                        <ul class="col-12 col-md-3 col-lg-3 text-center ">
-                                                <li><a href="indexbts4.html">Accueil</a></li>
-                                                <li><a href="aproposbts4.html">A propos</a></li>
-                                                <li><a href="API'S_test\CP_geoAPI\CPGeoApi.js">APIcodePostal</a></li>
-                                                <li><a href="API'S_test\API Adresse\geo-gouv_adressApi.html">APIadresse</a>
-                                                </li>
-                                        </ul>
 
-                                        <ul class="col-12 col-md-3 col-lg-3 text-center">
-                                                <li><a href="page404.html">page 404</a></li>
-                                                <li><a href="mentions-legales.html">Mentions Légales</a></li>
-                                                <li><a href="politiquedeconfidentialite.html">Politique de
-                                                                Confidentialité</a></li>
-                                                <li><a href="plandusite.html">Plan du site</a></li>
-                                        </ul>
-                                </section>
-                                <p class="row footerbottom justify-content-around m-1">
-                                        <span>&copy;G.K 2019 tous droits réservés</span>
-                                </p>
+                                        <a href="#">Learn More</a>
 
-                </footer>
-                <!-- mes feuilles JS---->
-                <script src="public/JS/boutontopbts4.js"></script>                
+                                </div>
 
-                <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-                        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-                        crossorigin="anonymous">
-                </script>
-                <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-                        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-                        crossorigin="anonymous">
-                </script>
-                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-                        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-                        crossorigin="anonymous">
-                </script>
-                <script src="public/JS/codePostalAPI.js"></script>
+                                <!------------------------------pinterest--------------------------->
+                                <div class="box-part text-center col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+                                        <i class="fa fa-pinterest-p fa-3x" aria-hidden="true"></i>
+
+                                        <div class="title">
+                                                <h4>Pinterest</h4>
+                                        </div>
+
+                                        <div class="text">
+                                                <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam.
+                                                        Assum decore te sed. Elitr
+                                                        scripta ocurreret qui ad.</span>
+                                        </div>
+
+                                        <a href="#">Learn More</a>
+
+                                </div>
+
+                        </aside>
+                        <!-------------------------------pied de page------------------------------------->
+
+                        <section class="row footertop text-center">
+                                <adresse class="adres col-12 col-md-3 col-lg-3">
+                                        <h2>Jeux de Mômes</h2>
+                                        <p>20, Avenue Winstone churchill<br>56000 VANNES<br>tel: 02.97.55.99.33
+                                        </p>
+                                </adresse>
+                                <div class="map col-12 col-md-3 col-lg-3 ">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2687.9200117362298!2d-2.7750422852591687!3d47.64712119317253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48101c1e45bf9d89%3A0xf1b4ec0fcc4d768d!2s20%20Rue%20Winston%20Churchill%2C%2056000%20Vannes!5e0!3m2!1sfr!2sfr!4v1578149354549!5m2!1sfr!2sfr"
+                                                frameborder="0" style="border:0;" allowfullscreen="" class="img-fluid">
+                                        </iframe>
+                                </div>
+                                <!------------------------------------liens ------------------------------------------------------------------------->
+                                <ul class="col-12 col-md-3 col-lg-3 text-center ">
+                                        <li><a href="indexbts4.html">Accueil</a></li>
+                                        <li><a href="aproposbts4.html">A propos</a></li>
+                                        <li><a href="API'S_test\CP_geoAPI\CPGeoApi.js">APIcodePostal</a></li>
+                                        <li><a href="API'S_test\API Adresse\geo-gouv_adressApi.html">APIadresse</a>
+                                        </li>
+                                </ul>
+
+                                <ul class="col-12 col-md-3 col-lg-3 text-center">
+                                        <li><a href="page404.html">page 404</a></li>
+                                        <li><a href="mentions-legales.html">Mentions Légales</a></li>
+                                        <li><a href="politiquedeconfidentialite.html">Politique de
+                                                        Confidentialité</a></li>
+                                        <li><a href="plandusite.html">Plan du site</a></li>
+                                </ul>
+                        </section>
+                        <p class="row footerbottom justify-content-around m-1">
+                                <span>&copy;G.K 2019 tous droits réservés</span>
+                        </p>
+
+        </footer>
+        <!-- mes feuilles JS---->
+
+        <script src="public/JS/boutontopbts4.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+                integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+                crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+                integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+                crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+                integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+                crossorigin="anonymous">
+        </script>
+        <script src="public/JS/codePostalAPI.js"></script>
+        <script>
+                $(document).ready(function () {
+                        $("#inclusion").hide();
+                        $("#autonomie").hover(function () {
+                        $("#inclusion").show();
+                        });
+                });
+        </script>
 
 </body>
 
