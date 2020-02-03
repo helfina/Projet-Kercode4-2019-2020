@@ -7,16 +7,16 @@ let telValid = /^((\+)33|0)[1-9](\d{2}){4}$/;
 
 //----------------var--prenom--------------------------
 let formValid = document.getElementById('click');
-let prenom = document.getElementById('lname');
+let prenom = document.getElementById('lnameC');
 // let missPrenom = document.getElementById('missPrenom');
 // -----------var----nom-----------------------------------
-let nom = document.getElementById('fname');
+let nom = document.getElementById('fnameC');
 // let noName = document.getElementById('noName');
 //----------mail-------------------------------------
-let mail = document.getElementById('email');
+let mail = document.getElementById('emailC');
 // let noMail = document.getElementById('noMail');
 //---------var-----tel--------------
-let tel = document.getElementById('tel');
+let tel = document.getElementById('telC');
 // let noTel = document.getElementById('noTel');
 //------------------------------------------------
 let error = document.getElementById('feedback')
