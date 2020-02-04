@@ -97,11 +97,11 @@ $(document).ready(function(){
         // e.preventDefault();        
 
         let apiUrl = "https://slack.com/api/chat.postMessage";
-        let channel = "#bots";
+        let channel = "bot";
         let text = document.getElementById('comment').value;
         // let nom = document.getElementById('lnameC').value;
         // let prenom = document.getElementById('fname').value;
-        let tel = document.getElementById('telC').value;
+        // let tel = document.getElementById('telC').value;
         // let mail = document.getElementById('email').value;
         // let tab = new [nom, prenom, tel, mail].values;
 
